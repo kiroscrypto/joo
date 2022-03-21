@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>김연주[Male] :: 웹퍼블리셔 포트폴리오</title>
+  <link rel="favicon icon" href="img/favicon.png">
+  <!--CSS-->
+  <link rel="stylesheet" href="web/css/fonts.css">
+  <link rel="stylesheet" href="web/css/reset.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
+  <link rel="stylesheet" href="web/css/lightbox.css">
+  <link rel="stylesheet" href="web/css/main.css">
+
+  <!--JS-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+  <script src="https://unpkg.com/isotope-layout@3.0.6/dist/isotope.pkgd.min.js"></script>
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <script src="web/js/lightbox.js"></script>
+  <script src="web/js/main.js"></script>
+  <!--<script>
+    $(function() {
+      let elm = $('#home')
+  elm.each(function (index) {
+    // 개별적으로 Wheel 이벤트 적용
+    $(this).on("mousewheel DOMMouseScroll", function (e) {
+      e.preventDefault();
+      let delta = 0;
+      if (!event) event = window.event;
+      if (event.wheelDelta) {
+        delta = event.wheelDelta / 120;
+        if (window.opera) delta = -delta;
+      }
+      else if (event.detail)
+        delta = -event.detail / 3;
+      let moveTop = $(window).scrollTop();
+      let elmSelecter = $(elm).eq(index);
+      // 마우스휠을 위에서 아래로
+      if (delta < 0) {
+        if ($(elmSelecter).next() != undefined) {
+          try {
+            moveTop = $(elmSelecter).next().offset().top;
+          } catch (e) { }
+        }
+        // 마우스휠을 아래에서 위로
+      } else {
+        if ($(elmSelecter).prev() != undefined) {
+          try {
+            moveTop = $(elmSelecter).prev().offset().top;
+          } catch (e) { }
+        }
+      }
+
+      // 화면 이동 0.8초(800)
+      $("html,body").stop().animate({
+        scrollTop: moveTop + 'px'
+      }, {
+        duration: 500, complete: function () {
+        }
+      });
+    });
+  });//each
+    })
+  </script>-->
+</head>
+<body>
+<div id="wrap">
+  <header>
+    <h1><span class="blind">신입 웹퍼블리셔 김연주[Male]</span></h1>
+    <ul id="gnb">
+      <li>Home</li>
+      <li>About Me</li>
+      <li>Work(Web)</li>
+      <li>Work(Graphic)</li>
+      <li>Contact</li>
+    </ul>
+  </header>
+  <main>
+    <section id="home" class="">
+      <div class="home_bg">
+        <div class="home_txt">
+          <h2>Web Publisher</h2>
+          <em>Web Designer, Web Publisher, UI Designer</em>
+        </div>
+        <img src="img/mouse.png" alt="scroll down" class="scroll">
+      </div>
+    </section>
+    <section id="about">
+      <h2>About Me</h2>
+      <div class="container">
+        <video src="media/welcome.mp4" autoplay loop muted></video>
+        <div class="introduce">
+            <!--사진 및 소개글 또는 인적사항-->
+            <h3>Profile</h3>
+            <ul class="Profile">
+              <li class="name">김연주</li>
+              <li>2022. 01 .01</li>
+              <li>구로구 신도림동</li>
+              <li>kiroscrypto@daum.net</li>
+            </ul>
+            <!--학력 및 경력, 자격 사항-->
+            <h3>교육 및 경력</h3>
+            <ul class="career">
+              <li><span>20211108~20220407</span><strong>
+                이젠컴퓨터아카데미 UI/UX 반응형<br>
+                웹디자인(웹퍼블리셔) 과정 수료</strong></li>
+              <li><span></span><strong></strong></li>
+            </ul>
+            <h3>자격증</h3>
+            <ul class="license">
+              <li><span>2022.00</span><strong>뭐든 따야겠지</strong></li>
+              <li><span>2022.00</span><strong>뭐든 따야지</strong></li>
+              <li><span>2022.00</span><strong>뭐든 따야해</strong></li>
+            </ul>
+        </div>
+        <div class="skill clrfix">
+          <h3>Skill</h3>
+          <ul class="s1">
+            <li class="html">HTML 50%</li>
+            <li class="css">CSS 50%</li>
+            <li class="javascript">자바스크립트 50%</li>
+            <li class="jquery">제이쿼리 50%</li>
+            <li class="photoshop">포토샵 50%</li>
+            <li class="illust">일러스트 50%</li>
+          </ul>
+          <ul class="s2">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section id="work1" class="">
+      <div class="container">
+        <h2>Work(Web)</h2>
+        <div class="web_swiper">
+          <div class="swiper_wrap swiper-wrapper">
+            <div class="web_slide swiper-slide">
+              <img src="img/blank.png" class="web1" alt="">
+              <div class="web_txt">
+                <div class="work_title">사당자동차운전전문학원</div>
+                <div class="work_summary">
+                  <!--간단한 설명-->
+                  <p>기존의 사이트를 반응형 사이트로 제작하였습니다.</p>
+                  <!--사용스킬-->
+                  <dl>
+                    <dt>디자인 : </dt>
+                    <dd>100%</dd>
+                    <dt>코딩 : </dt>
+                    <dd>100%</dd>
+                  </dl>
+                </div>
+                <div class="link">
+                  <a href="web/drive/" target="_blank">메인페이지</a>
+                </div>
+              </div>
+            </div>
+            <div class="web_slide swiper-slide">
+              <img src="img/blank.png" class="web2" alt="">
+              <div class="web_txt">
+                <div class="work_title">미스사이공</div>
+                <div class="work_summary"></div>
+                <div class="link"></div>
+              </div>
+            </div>
+            <div class="web_slide swiper-slide">
+              <img src="img/blank.png" class="web3" alt="">
+              <div class="web_txt">
+                <div class="work_title">지란지교 시큐리티</div>
+                <div class="work_summary">
+                  <p>기존 사이트를 반응형으로 클론코딩하였습니다.</p>
+                  <dl>
+                    <dt>디자인 : </dt>
+                    <dd>기존 디자인</dd>
+                    <dt>코딩 : </dt>
+                    <dd>100%</dd>
+                  </dl>
+                </div>
+                <div class="link"></div>
+              </div>
+            </div>
+            <div class="web_slide swiper-slide">
+              <img src="img/blank.png" class="web4" alt="">
+              <div class="web_txt">
+                <div class="work_title">NHN</div>
+                <div class="work_summary"></div>
+                <div class="link">
+                  <a href="web/nhn/company_ethics.html" target="_blank">기업윤리규범</a>
+                  <a href="web/nhn/press_release.html" target="_blank">보도자료</a>
+                </div>
+              </div>
+            </div>
+            <div class="web_slide swiper-slide">
+              <img src="img/blank.png" class="web5" alt="">
+              <div class="web_txt">
+                <div class="work_title"></div>
+                <div class="work_summary"></div>
+                <div class="link"></div>
+              </div>
+            </div>
+          </div>
+          <div class="web_pagination"></div>
+        </div>        
+        <button class="web_prev"><img src="img/prev.png" alt=""></button>
+        <button class="web_next"><img src="img/next.png" alt=""></button>
+        <div class="web_scrollbar"></div>
+      </div> 
+    </section>
+    <section id="work2" class="">
+      <div class="container">
+        <h2>Work(Graphic)</h2>
+        <ul class="tabs">
+          <li class="on" data-filter="*">전체</li>
+          <li data-filter=".d1">편집디자인</li>
+          <li data-filter=".d2">인포그래픽</li>
+          <li data-filter=".d3">패키지디자인</li>
+        </ul>
+        <ul class="work_thumb">
+          <li class="d1"><a href="img/pf_1.jpg" data-lightbox="graphic">
+            <img src="img/pf_1.jpg" alt="명함디자인">
+            <span>
+              <strong>명함 디자인 <i class="fa fa-plus-circle" aria-hidden="true"></i></strong>
+            </span>
+          </a></li>
+          <li class="d2">
+            <a href="img/pf_2.jpg" data-lightbox="graphic">
+              <img src="img/pf_2.jpg" alt="">
+              <span><strong>포스터 디자인 <i class="fa fa-plus-circle" aria-hidden="true"></i></strong></span>
+            </a>
+          </li>
+          <li class="d2"><a href="img/pf_3.jpg" data-lightbox="graphic"><img src="img/pf_3.jpg" alt="..."><span><strong>인포그래픽 <i class="fa fa-plus-circle" aria-hidden="true"></i></strong></span></a></li>
+          <li class="d3"><a href="img/pf_4.jpg" data-lightbox="graphic"><img src="img/pf_4.jpg" alt="..."><span><strong>명함 디자인 <i class="fa fa-plus-circle" aria-hidden="true"></i></strong></span></a></li>
+          <li class="d1"><a href="img/pf_5.jpg" data-lightbox="graphic"><img src="img/pf_5.jpg" alt="..."><span><strong>명함 디자인 <i class="fa fa-plus-circle" aria-hidden="true"></i></strong></span></a></li>
+          <li class="d2"><a href="img/pf_6.jpg" data-lightbox="graphic"><img src="img/pf_6.jpg" alt="..."><span><strong>명함 디자인 <i class="fa fa-plus-circle" aria-hidden="true"></i></strong></span></a></li>
+          <li class="d3"><a href="img/pf_7.png" data-lightbox="graphic"><img src="img/pf_7.png" alt="..."><span><strong>명함 디자인 <i class="fa fa-plus-circle" aria-hidden="true"></i></strong></span></a></li>
+          <li class="d1"><a href="img/pf_7.jpg" data-lightbox="graphic"><img src="img/pf_7.jpg" alt="..."><span><strong>명함 디자인 <i class="fa fa-plus-circle" aria-hidden="true"></i></strong></span></a></li>
+          <li class="d3"><a href="img/pf_8.png" data-lightbox="graphic"><img src="img/pf_8.png" alt="..."><span><strong>명함 디자인 <i class="fa fa-plus-circle" aria-hidden="true"></i></strong></span></a></li>
+          <li class="d3"><a href="img/pf_9.png" data-lightbox="graphic"><img src="img/pf_9.png" alt="..."><span><strong>명함 디자인 <i class="fa fa-plus-circle" aria-hidden="true"></i></strong></span></a></li>
+          <li class="d2"><a href="img/pf_10.jpg" data-lightbox="graphic"><img src="img/pf_10.jpg" alt="..."><span><strong>명함 디자인 <i class="fa fa-plus-circle" aria-hidden="true"></i></strong></span></a></li>
+        </ul>
+      </div>
+    </section>
+    <section id="contact" class="">
+      <!--연락처 : 전화번호(학원전화번호), 이메일, sns, 오픈 카톡-->
+    </section>
+  </main>
+  <footer>
+    <p>
+      개인 포트폴리오용으로 제작된 사이트입니다. <br>
+      이미지 등에 관한 출처는 별도 표기되어 있습니다.
+    </p>
+    <p class="copyright">&copy; 2022 Kim Yeonjoo. All Rights Reserved.</p>
+  </footer>
+</div>  
+</body>
+</html>
+<!-- 
+<div id="lightboxOverlay" tabindex="-1" class="lightboxOverlay"></div>
+<div id="lightbox" tabindex="-1" class="lightbox">
+  <div class="lb-outerContainer">
+    <div class="lb-container">
+      <img class="lb-image" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" alt=""/>
+      <div class="lb-nav">
+        <a class="lb-prev" aria-label="Previous image" href="" ></a>
+        <a class="lb-next" aria-label="Next image" href="" ></a>
+      </div>
+      <div class="lb-loader"><a class="lb-cancel"></a></div>
+    </div>
+  </div>
+  <div class="lb-dataContainer">
+    <div class="lb-data">
+      <div class="lb-details">
+        <span class="lb-caption"></span>
+        <span class="lb-number"></span>
+      </div>
+      <div class="lb-closeContainer">
+        <a class="lb-close"></a>
+      </div>
+    </div>
+  </div>
+</div> -->
