@@ -7,6 +7,7 @@ body {
 }
 section {min-height: 100vh;padding-top: 120px;}
 section h2 {margin-bottom: 26px;text-align: center;font-size: 50px;font-weight: 600;}
+section h3 {font-size: 24px; font-weight: 600;}
 button {cursor: pointer;line-height: 1;background: transparent;border: none;}
 .clrfix {content:""; display: block; clear: both;}
 .blind {display: block;width: 0;height: 0;overflow: hidden;}
@@ -39,13 +40,64 @@ header.bg_on #gnb li {color: #000;font-size: 18px;line-height: 25px;transition: 
 
 /*About Me*/
 #about {}
-#about video {float: left; width: 50%; }
-#about .introduce {float:left; margin-left: 30px;}
-#about .introduce h3 {font-size: 24px; font-weight: 600; margin-bottom: 10px;}
-#about .introduce ul {padding: 5px 0 50px 0;}
-#about .introduce .career {line-height: 1.3;}
-#about .introduce ul li {padding:2px 0 ;}
-#about .skill{border: 3px solid #000;}
+#about .introduce { overflow: hidden; margin-bottom: 100px; position: relative;}
+#about .introduce video {float: left; width: 50%;}
+#about .appendix {position: absolute; left: 50%; top: 50%; transform: translate(10%, -50%); overflow: hidden; border: 1px solid #000; }
+
+#about .appendix span {line-height: 3.8; }
+#about .profile div {float: left; width: 33.333%; text-align: center; }
+#about .profile h3 {margin-bottom: 15px;}
+#about .profile ul li {padding:10px 0 ;}
+#about .profile .career {line-height: 1.3;}
+
+
+#skill{border: 3px solid #000;}
+#skill .box1 {text-align:center; overflow: hidden;}
+#skill .box1 ul {display: inline-block; width: 13.333%; margin-right: 50px;}
+#skill .box1 ul:last-child {margin-right: 0;}
+#skill .box1 li img {width: 100%; }
+#skill .box1 .s1 .graph {border-radius: 18px; background: #ccc; line-height: 1.4;}
+#skill .box1 .s1 .graph span {display: block; padding: 0 10px; color: #fff; text-align: right;
+ box-sizing: border-box; border-radius: 18px; background: yellowgreen; line-height: 1.4;}
+#skill .box1 .s1 .graph .fill_1 {width: 80%; animation: fill_1 2s 1; }
+ @keyframes fill_1 {
+  0% {width: 0; color: rgba(255, 255, 255, 0); }
+  40% {width: 40%; color: rgba(255, 255, 255, 1); }
+  100% {width: 80%;}
+}
+#skill .box1 .s1 .graph .fill_2 {width: 70%; animation: fill_2 2s 1; }
+@keyframes fill_2 {
+  0% {width: 0; color: rgba(255, 255, 255, 0); }
+  40% {width: 40%; color: rgba(255, 255, 255, 1); }
+  100% {width: 70%;}
+}
+#skill .box1 .s1 .graph .fill_3 {width: 60%; animation: fill_3 2s 1;}
+@keyframes fill_3 {
+  0% {width: 0; color: rgba(255, 255, 255, 0); }
+  40% {width: 40%; color: rgba(255, 255, 255, 1); }
+  100% {width: 60%;}
+}
+#skill .box1 .s1 .graph .fill_4 {width: 60%; animation: fill_4 2s 1;}
+@keyframes fill_4 {
+  0% {width: 0; color: rgba(255, 255, 255, 0); }
+  40% {width: 40%; color: rgba(255, 255, 255, 1); }
+  100% {width: 60%;}
+}
+#skill .box1 .s1 .graph .fill_5 {width: 70%; animation: fill_5 2s 1;}
+@keyframes fill_5 {
+  0% {width: 0; color: rgba(255, 255, 255, 0); }
+  40% {width: 40%; color: rgba(255, 255, 255, 1); }
+  100% {width: 70%;}
+}
+#skill .box1 .s1 .graph .fill_6 {width: 70%; animation: fill_6 2s 1;}
+@keyframes fill_6 {
+  0% {width: 0; color: rgba(255, 255, 255, 0); }
+  40% {width: 40%; color: rgba(255, 255, 255, 1); }
+  100% {width: 70%;}
+}
+
+#skill .box2 {margin-top: 50px; border: 3px solid #000;}
+
 
 /*Web Work*/
 #work1 {background: #FAA;position: relative;}
