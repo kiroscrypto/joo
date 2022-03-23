@@ -158,4 +158,8 @@ font-size: 40px; color: #212121; font-weight: 100;
 
 /*footer*/
 footer {background:#303A48; color: #999; padding: 20px 0;}
+footer .digital_clock { width: 200px; height: 100px; text-align: center; color: #f4f4f4; 
+background-color: black; padding-top: 10px; } 
+footer #clock { color: #F0C420; font-size: 28px; } 
+footer #clockday { color: #F0C420; } 
 footer p {text-align: center; padding: 10px 0; line-height: 1.3;}
