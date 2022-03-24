@@ -26,8 +26,8 @@ $(function(){
    function Write(YYYY, MM, DD, hh, mm, ss, Week) { 
     var clockday = document.getElementById("clockday"); 
     var clock = document.getElementById("clock"); 
-    clockday.innerText = YYYY + '.' + MM + '.' + DD + '(' + Week + ')'; 
-    clock.innerText = hh + ':' + mm + ':' + ss; 
+    clockday.innerText = YYYY + '. ' + MM + '. ' + DD + ' (' + Week + ')'; 
+    clock.innerText = hh + ' : ' + mm + ' : ' + ss; 
     } 
    } 
    
