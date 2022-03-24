@@ -3,9 +3,9 @@
 /*Common*/
 body {
   font-family: 'Montserrat', 'NanumSquare', 'Noto Sans KR', '맑은 고딕', 'Apple SD Gothic', 'Dotum', sans-serif;
-  font-size: 18px;
+  font-size: 16px;
 }
-section {min-height: 100vh;padding-top: 120px;}
+section {min-height: 100vh;padding-top: 100px;}
 section h2 {margin-bottom: 26px;text-align: center;font-size: 50px;font-weight: 600;}
 section h3 {font-size: 24px; font-weight: 600;}
 button {cursor: pointer;line-height: 1;background: transparent;border: none;}
@@ -15,12 +15,12 @@ button {cursor: pointer;line-height: 1;background: transparent;border: none;}
 
 /*Header*/
 header {padding: 30px 5%;position: fixed;left: 0;right: 0;top: 0;z-index: 9999;transition: all 0.3s}
-header h1 {width: 170px;height: 30px;float: left;background: url(../../img/logo_w.png) no-repeat;background-size: contain !important;cursor: pointer;transition: all 0.3s}
+header h1 {width: 160px;height: 50px;float: left;background: url(../../img/logo_w.png) no-repeat;background-size: contain !important;cursor: pointer;transition: all 0.3s}
 header #gnb {float: right;}
 header #gnb li {float: left;margin-right: 40px;color: #FFF;font-size: 20px;font-weight: 600;line-height: 30px;cursor: pointer;user-select: none;transition: all 0.3s}
 /*홈이 아닌 다른 페이지일 때 헤더의 스타일 변경*/
 header.bg_on {background: #FFF;padding: 20px 5%;border-bottom: 1px solid #999;transition: all 0.3s}
-header.bg_on h1 {width: 140px;height: 25px;background: url(../../img/logo.png) no-repeat;transition: all 0.3s}
+header.bg_on h1 {width: 120px;height: 38px;background: url(../../img/logo.png) no-repeat;transition: all 0.3s}
 header.bg_on #gnb li {color: #000;font-size: 18px;line-height: 25px;transition: all 0.3s}
 
 
@@ -47,7 +47,7 @@ header.bg_on #gnb li {color: #000;font-size: 18px;line-height: 25px;transition: 
 #about .appendix span {line-height: 1.2; }
 #about .profile div {float: left; width: 33.333%; }
 #about .profile h3 {margin-bottom: 15px; text-align: center;}
-#about .profile ul li {padding:10px 0 ; text-align: center;}
+#about .profile ul li {padding:2px 0 ; text-align: center; }
 #about .profile .career {line-height: 1.3;}
 
 
@@ -108,10 +108,13 @@ header.bg_on #gnb li {color: #000;font-size: 18px;line-height: 25px;transition: 
 	}	
 }
 /* 슬라이드업 끝 */
+#skill {background: #dedede;}
 #skill .box1 {text-align:center; }
-#skill .box1 ul {float: left; width: 12%; margin-right: 50px;}
+#skill h3 {margin-bottom: 20px; text-decoration: underline;}
+#skill .box1 ul {float: left; width: 13.3333%; margin-right: 50px;}
 #skill .box1 ul:last-child {margin-right: 0;}
 #skill .box1 li img {width: 100%; }
+#skill .box1 li {font-size: 15px;font-weight: 500;}
 /*원형차트 시작 Code By Webdevtrick ( https://webdevtrick.com ) */
 #skill .round {margin-top: 30px; position: relative; margin-bottom: 20px;
 }
@@ -120,7 +123,7 @@ font-size: 40px; color: #212121; font-weight: 100;
 }
 /*원형차트 끝 Code By Webdevtrick ( https://webdevtrick.com ) */
 
-#skill .box2 {margin-top: 50px; border: 3px solid #000;}
+#skill .box2 {margin-top: 50px; border: 3px solid #000; text-align: center;}
 
 
 /*Web Work*/
@@ -130,6 +133,7 @@ font-size: 40px; color: #212121; font-weight: 100;
 #work1 .web_slide:after {content:""; display: block;clear: both;}
 #work1 .web_slide img {float: right;width: 60%;height: 100%;background-size: cover !important;}
 #work1 .web_slide img.web1 {background: url(../../img/web_1.png) center;}
+#work1 .web_slide img.web2 {background: url(../../img/web_2.png) center;}
 #work1 .web_slide .web_txt {float: left;width: 35%;padding: 30px;}
 #work1 .web_slide .web_txt .work_title {font-size: 26px;margin-bottom: 20px;}
 #work1 .web_slide .web_txt .work_summary {height: 300px;}
@@ -154,18 +158,41 @@ font-size: 40px; color: #212121; font-weight: 100;
 #work2 .work_thumb i {display: block;margin-top: 15px;}
 
 /*Contact*/
-#contact {min-height: 70vh; background: powderblue;}
+#contact {min-height: 65vh; background: powderblue;}
 #contact .contact_info {text-align: center;}
 #contact .contact_info span {}
 #contact .sns {margin: 30px 0;}
 #contact .sns img {padding: 0 10px;}
 #contact .quote {font-size: 30px; font-weight: 700;}
+/* css text animation 시작 */
+#contact .quote {text-transform: uppercase; 
+	background-image: linear-gradient( -225deg,#231557 0%, #44107a 29%, #ff1361 67%, #fff800 100%
+);
+background-size: auto auto;
+background-clip: border-box;
+background-size: 200% auto;
+color: #fff;
+background-clip: text;
+text-fill-color: transparent;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+animation: textclip 2.5s linear reverse infinite;
+display: inline-block;
+				font-size: 30px;
+}
+
+@keyframes textclip {
+to {
+		background-position: 200% center;
+}
+}
+/* css text animation 끝*/
 #contact .digital_clock {margin-bottom: 15px;}
 #contact .digital_clock span {text-align: center; font-size: 16px;}
 #contact .digital_clock {height: 100px; text-align: center; color: #f4f4f4; padding: 10px 0; } 
-#contact #clock { color: #f4f4f4; font-size: 28px; } 
-#contact #clockday { color: #f4f4f4; } 
+#contact #clock { color: #f4f4f4; font-size: 24px; font-family:'NanumSquare'; font-weight: bold; } 
+#contact #clockday { color: #f4f4f4; font-family:'NanumSquare'; } 
 
 /*footer*/
-footer {background:#303A48; color: #999; padding: 20px 0;}
+footer {background:#303A48; font-size: 14px; font-weight: 400; color: #999; padding: 20px 0;}
 footer p {text-align: center; line-height: 1.3;}
