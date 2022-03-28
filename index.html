@@ -91,7 +91,7 @@
         <li>About Me</li>
         <li>Work(Web)</li>
         <li>Work(Graphic)</li>
-        <li>Effects</li>
+        <li>Study</li>
         <li>Contact</li>
       </ul>
     </header>
@@ -110,7 +110,7 @@
         <div class="container">
           <ul class="introduce">
             <li class="box active">
-              <span>#각오</span>
+              <span>#프롤로그</span>
               <div class="detail active">
                 <p>
                   웹(WEB)을 좋아하는 웹 퍼블리셔!
@@ -353,10 +353,10 @@
           </ul>
         </div>
       </section>
-      <section id="effects" class="">
+      <section id="study" class="">
         <!--코딩 공부-->
         <div class="container">
-          <h2>Effects</h2>
+          <h2>Study</h2>
         <!--제이퀴리 탭 시작-->
         <div id="tabs" class="tabs">
           <nav>
@@ -371,83 +371,68 @@
           <div class="content">
             <section id="section-1">
               <div class="mediabox">
-                <!-- <img src="img/01.png" alt="img01" /> -->
-                <iframe src="stuff/text_spinners.html" width="360" height="195" frameborder="0"></iframe>
                 <h4>Text spinners</h4>
-                <p>
+                <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="gOoWRYb" data-user="kiroscrypto" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                  <span>See the Pen <a href="https://codepen.io/kiroscrypto/pen/gOoWRYb">
+                  Untitled</a> by kiroscrypto (<a href="https://codepen.io/kiroscrypto">@kiroscrypto</a>)
+                  on <a href="https://codepen.io">CodePen</a>.</span>
                 </p>
-              </div>
-              <div class="mediabox">
-                <img src="img/02.png" alt="img02" />
-                <h4>Pea Sprouts Fava Soup</h4>
-                <p>Lotus root water spinach fennel kombu maize bamboo shoot green bean swiss chard seakale pumpkin onion chickpea gram corn pea.</p>
-              </div>
-              <div class="mediabox">
-                <img src="img/03.png" alt="img03" />
-                <h4>Turnip Broccoli Sashimi</h4>
-                <p>Nori grape silver beet broccoli kombu beet greens fava bean potato quandong celery. Bunya nuts black-eyed pea prairie turnip leek lentil turnip greens parsnip.</p>
+                <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+
+                <h4>CSS 텍스트 애니메이션</h4>
+                <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="rNpmwpq" data-user="kiroscrypto" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                  <span>See the Pen <a href="https://codepen.io/kiroscrypto/pen/rNpmwpq">
+                  Untitled</a> by kiroscrypto (<a href="https://codepen.io/kiroscrypto">@kiroscrypto</a>)
+                  on <a href="https://codepen.io">CodePen</a>.</span>
+                </p>
+                <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+
+                <h4>Text spinners</h4>
+                <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="gOoWRYb" data-user="kiroscrypto" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                  <span>See the Pen <a href="https://codepen.io/kiroscrypto/pen/gOoWRYb">
+                  Untitled</a> by kiroscrypto (<a href="https://codepen.io/kiroscrypto">@kiroscrypto</a>)
+                  on <a href="https://codepen.io">CodePen</a>.</span>
+                </p>
+                <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
               </div>
             </section>
             <section id="section-2">
               <div class="mediabox">
-                <!-- <img src="img/04.png" alt="img04" /> -->
-                <iframe src="stuff/hamburger.html" width="360" height="195" frameborder="0"></iframe>
-                <h4>움직이는 햄버거 메뉴 버튼</h4>
-                <p>
-                  /*기본 css*/ <br>
-                  .menu, .menu span {
-                  display: inline-block; transition: all 0.4s; box-sizing: border-box;
-                  }<br>
-                  .menu {
-                  position: relative; width: 44px; height: 44px;
-                  }<br>
-                  .menu span {
-                  position: absolute; left: 0; width: 100%; height: 4px; background-color: #dedede; border-radius: 4px;
-                  }<br>
-                  .menu span:nth-child(1) {top: 0;}<br>
-                  .menu span:nth-child(2) {top: 20px;}<br>
-                  .menu span:nth-child(3) {bottom: 0;}<br>
-                              
-                  /*마우스 hover<span class="ch"> 時 </span>css*/<br>
-                  .menu.active span:nth-child(1) {
-                  -webkit-transform: translateY(20px) rotate(-45deg);
-                  transform: translateY(20px) rotate(-45deg);<br>
-                  /* y축으로 20px 이동하고 -45도 돌린다 */
-                  }<br>
-                  .menu.active span:nth-child(2) {
-                  opacity: 0;<br>
-                 /* 2번째 줄에 마우스 hover<span class="ch"> 時 </span>투명해져라 */
-                  }<br>
-                  .menu.active span:nth-child(3) {
-                  -webkit-transform: translateY(-20px) rotate(45deg);
-                  transform: translateY(-20px) rotate(45deg);<br>
-                  /* y축으로 -20px 이동하고 45도 돌린다 */
-                  }<br>
-                  /*Jquery 작성*/<br>
-                  &lt;script><br>
-                    $('.menu').hover(function(){
-                      $(this).toggleClass('active');<br>
-                      /* 마우스를 menu 클래스에 올렸을 때 active클래스를 토글(넣고 빼고)해라 */
-                    });<br>
-                    &lt;/script>
+                <h4>햄버거 메뉴</h4>
+                <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="QWavvPG" data-user="kiroscrypto" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                  <span>See the Pen <a href="https://codepen.io/kiroscrypto/pen/QWavvPG">
+                  Untitled</a> by kiroscrypto (<a href="https://codepen.io/kiroscrypto">@kiroscrypto</a>)
+                  on <a href="https://codepen.io">CodePen</a>.</span>
                 </p>
+                <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+
+                <h4>햄버거 메뉴</h4>
+                <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="QWavvPG" data-user="kiroscrypto" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                  <span>See the Pen <a href="https://codepen.io/kiroscrypto/pen/QWavvPG">
+                  Untitled</a> by kiroscrypto (<a href="https://codepen.io/kiroscrypto">@kiroscrypto</a>)
+                  on <a href="https://codepen.io">CodePen</a>.</span>
+                </p>
+                <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+
+                <h4>햄버거 메뉴</h4>
+                <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="QWavvPG" data-user="kiroscrypto" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                  <span>See the Pen <a href="https://codepen.io/kiroscrypto/pen/QWavvPG">
+                  Untitled</a> by kiroscrypto (<a href="https://codepen.io/kiroscrypto">@kiroscrypto</a>)
+                  on <a href="https://codepen.io">CodePen</a>.</span>
+                </p>
+                <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
               </div>
-              <div class="mediabox">
-                <img src="img/05.png" alt="img05" />
-                <h4>Magis Kohlrabi Gourd</h4>
-                <p>Salsify taro catsear garlic gram celery bitterleaf wattle seed collard greens nori. Grape wattle seed kombu beetroot horseradish carrot squash brussels sprout chard.</p>
-              </div>
-              <div class="mediabox">
-                <img src="img/06.png" alt="img06" />
-                <h4>Ricebean Rutabaga</h4>
-                <p>Celery quandong swiss chard chicory earthnut pea potato. Salsify taro catsear garlic gram celery bitterleaf wattle seed collard greens nori. </p>
-              </div>
+              
             </section>
             <section id="section-3">
               <div class="mediabox">
-                <img src="img/02.png" alt="img02" />
                 <h4>Noodle Curry</h4>
-                <p>Lotus root water spinach fennel kombu maize bamboo shoot green bean swiss chard seakale pumpkin onion chickpea gram corn pea.Sushi gumbo beet greens corn soko endive gumbo gourd.</p>
+                <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="WNdjjxe" data-user="kiroscrypto" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                  <span>See the Pen <a href="https://codepen.io/kiroscrypto/pen/WNdjjxe">
+                  Untitled</a> by kiroscrypto (<a href="https://codepen.io/kiroscrypto">@kiroscrypto</a>)
+                  on <a href="https://codepen.io">CodePen</a>.</span>
+                </p>
+                <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
               </div>
               <div class="mediabox">
                 <img src="img/06.png" alt="img06" />
@@ -462,20 +447,30 @@
             </section>
             <section id="section-4">
               <div class="mediabox">
-                <img src="img/03.png" alt="img03" />
-                <h4>Tomato Cucumber Curd</h4>
-                <p>Chickweed okra pea winter purslane coriander yarrow sweet pepper radish garlic brussels sprout groundnut summer purslane earthnut pea tomato spring onion azuki bean gourd. </p>
-              </div>
-              <div class="mediabox">
-                <img src="img/01.png" alt="img01" />
-                <h4>Mushroom Green</h4>
-                <p>Salsify taro catsear garlic gram celery bitterleaf wattle seed collard greens nori. Grape wattle seed kombu beetroot horseradish carrot squash brussels sprout chard.</p>
-              </div>
-              <div class="mediabox">
-                <img src="img/04.png" alt="img04" />
-                <h4>Swiss Celery Chard</h4>
-                <p>Celery quandong swiss chard chicory earthnut pea potato. Salsify taro catsear garlic gram celery bitterleaf wattle seed collard greens nori. </p>
-              </div>
+                <h4>디지털 시계</h4>
+                <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="gOoWRMa" data-user="kiroscrypto" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                  <span>See the Pen <a href="https://codepen.io/kiroscrypto/pen/gOoWRMa">
+                  Untitled</a> by kiroscrypto (<a href="https://codepen.io/kiroscrypto">@kiroscrypto</a>)
+                  on <a href="https://codepen.io">CodePen</a>.</span>
+                </p>
+                <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+
+                <h4>디지털 시계</h4>
+                <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="gOoWRMa" data-user="kiroscrypto" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                  <span>See the Pen <a href="https://codepen.io/kiroscrypto/pen/gOoWRMa">
+                  Untitled</a> by kiroscrypto (<a href="https://codepen.io/kiroscrypto">@kiroscrypto</a>)
+                  on <a href="https://codepen.io">CodePen</a>.</span>
+                </p>
+                <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+
+                <h4>디지털 시계</h4>
+                <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="gOoWRMa" data-user="kiroscrypto" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                  <span>See the Pen <a href="https://codepen.io/kiroscrypto/pen/gOoWRMa">
+                  Untitled</a> by kiroscrypto (<a href="https://codepen.io/kiroscrypto">@kiroscrypto</a>)
+                  on <a href="https://codepen.io">CodePen</a>.</span>
+                </p>
+                <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+                </div>
             </section>
             <section id="section-5">
               <div class="mediabox">
@@ -536,7 +531,7 @@
         이미지 등에 관한 출처는 별도 표기되어 있습니다.
 
       </p>
-      <p class="copyright">&copy; 2022 Kimmy All Rights Reserved. Minimum width 320px  |  Responsive Web</p>
+      <p class="copyright">&copy; 2022 Kimmy. All Rights Reserved. Minimum width 320px  |  Responsive Web</p>
     </footer>
   </div>
 <!-- 슬라이드업 시작 -->
