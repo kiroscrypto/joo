@@ -32,4 +32,4 @@ $(function(){
    } 
    
    setInterval(clock, 1000); //1초(1000)마다 clock함수를 재실행 한다 
-})
+});

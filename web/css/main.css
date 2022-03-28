@@ -26,7 +26,7 @@ main .ch {font-family: 'Noto Sans TC';}
 
 
 /*Home*/
-#home {height: 100vh;padding-top: 0;background: url(../../img/bg.jpg) center;background-size: cover;}
+#home {height: 100vh;padding-top: 0;background: url(../../img/bg.jpg) center;background-size: contain;}
 #home .home_bg {height:100%;position: relative;background: rgba(0,0,0,0.5);color: #FFF;text-align: center;}
 #home .home_txt {position: absolute;left: 50%;top: 50%;transform: translate(-50%, -80%)}
 #home .home_txt h2 {font-size: 50px;font-weight: 600;margin-bottom: 20px;}
@@ -39,7 +39,7 @@ main .ch {font-family: 'Noto Sans TC';}
 #home .scroll {height: 60px;position: absolute;left: 50%;bottom: 100px;transform: translateX(-50%);animation: scroll 0.8s infinite;}
 
 /*About Me*/
-#about {color: #fff; background: url(../../img/bg_skill.jpg) center; background-size: cover;}
+#about {color: #fff; background: url(../../img/bg_skill.png) center; background-size: cover;}
 /* introduce slide bar 시작 */
 #about .introduce { display: flex; background: #000; margin: 70px auto 70px auto; padding:0; width: 991px;
 }
@@ -182,39 +182,7 @@ font-size: 40px; color: #212121; font-weight: 100;
 #work2 .work_thumb strong {font-size: 24px;position: absolute;left: 50%;top: 50%;transform: translate(-50%, -50%);}
 #work2 .work_thumb i {display: block;margin-top: 15px;}
 
-/*Contact*/
-#contact {min-height: 65vh; background: powderblue;}
-#contact .contact_info {text-align: center;}
-#contact .contact_info span {}
-#contact .sns {margin: 30px 0;}
-#contact .sns img {padding: 0 10px;}
-#contact .quote {font-size: 30px; font-weight: 700;}
-/* css text animation 시작 */
-#contact .quote {text-transform: uppercase; 
-	background-image: linear-gradient( -225deg,#231557 0%, #44107a 29%, #ff1361 67%, #fff800 100%
-);
-background-size: auto auto;
-background-clip: border-box;
-background-size: 200% auto;
-color: #fff;
-background-clip: text;
-text-fill-color: transparent;
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
-animation: textclip 2.5s linear reverse infinite;
-display: inline-block;
-				font-size: 30px;
-}
-
-@keyframes textclip {
-to {
-		background-position: 200% center;
-}
-}
-/* css text animation 끝*/
-
-#effects {background:#231557; color:#FFF}
-#effects p {font-size: 12px; line-height: 1.6;}
+#study {background:#7c7a68; color:#FFF}
 /*제이퀴리 탭 시작*/
 .tabs {
 	position: relative; width: 100%; overflow: hidden;
@@ -269,8 +237,7 @@ to {
 }
 
 .content section.content-current { display: block; }
-.mediabox { float: left; width: 33%; padding: 0 25px; }
-.mediabox img { 	max-width: 100%; display: block; margin: 0 auto; }
+.mediabox { float: left; width: 100%; padding: 0 25px; }
 .mediabox h3 { 	margin: 0.75em 0 0.5em; }
 .mediabox p { 	padding: 0 0 1em 0; margin: 0; line-height: 1.3; }
 
@@ -295,12 +262,40 @@ to {
 	.mediabox { text-align: center; }
 	.mediabox img { float: none; margin: 0 auto; max-width: 100%; }
 	.mediabox h3 { margin: 1.25em 0 1em; }
-	.mediabox p { margin: 0; }
+	.mediabox p {margin: 0;}
 }
 /*제이퀴리 탭 끝*/
-#effects #section-2 {border: 5px solid yellow;}
-#effects #section-2 .mediabox {border-bottom: 5px solid #000;}
-#effects #section-2 .mediabox iframe {border: 1px solid red; text-align: center;}
+
+/*Contact*/
+#contact {min-height: 65vh; background: powderblue;}
+#contact .contact_info {text-align: center;}
+#contact .contact_info span {}
+#contact .sns {margin: 30px 0;}
+#contact .sns img {padding: 0 10px;}
+#contact .quote {font-size: 30px; font-weight: 700;}
+/* css text animation 시작 */
+#contact .quote {text-transform: uppercase; 
+	background-image: linear-gradient( -225deg,#231557 0%, #44107a 29%, #ff1361 67%, #fff800 100%
+);
+background-size: auto auto;
+background-clip: border-box;
+background-size: 200% auto;
+color: #fff;
+background-clip: text;
+text-fill-color: transparent;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+animation: textclip 2.5s linear reverse infinite;
+display: inline-block;
+				font-size: 30px;
+}
+
+@keyframes textclip {
+to {
+		background-position: 200% center;
+}
+}
+/* css text animation 끝*/
 
 #contact .digital_clock {margin-bottom: 15px;}
 #contact .digital_clock span {text-align: center; font-size: 16px;}
