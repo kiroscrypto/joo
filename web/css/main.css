@@ -86,6 +86,9 @@ main .ch {font-family: 'Noto Sans TC';}
 	transform: translateY(100%);}
 
 #about .detail.about_bg_1 {background: url(../../img/about_bg_1.jpg); background-size: contain; }
+#about .detail.about_bg_2 {background: url(../../img/about_bg_2.jpg); background-size: contain; }
+#about .detail.about_bg_3 {background: url(../../img/about_bg_1.jpg); background-size: contain; }
+#about .detail.about_bg_4 {background: url(../../img/about_bg_1.jpg); background-size: contain; }
 #about .detail.about_bg_5 {background: url(../../img/about_bg_5.jpg); background-size: contain; }
 #about .box.active { width: 70% !important; }
 #about .box.active .detail { opacity: 1; -webkit-transition-delay: 0.6s; -moz-transition-delay: 0.6s; 
