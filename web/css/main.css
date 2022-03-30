@@ -5,8 +5,8 @@ body {
   font-family: 'Montserrat', 'NanumSquare', 'Noto Sans KR', '맑은 고딕', 'Apple SD Gothic', 'Dotum', sans-serif;
   font-size: 16px;
 }
-section {min-height: 100vh;padding-top: 80px;}
-section h2 {margin-bottom: 26px;text-align: center;font-size: 50px;font-weight: 600;}
+section {min-height: 100vh;padding-top:100px;}
+section h2 {margin-bottom: 26px;text-align: center;font-size: 50px;font-weight: 600; color: #000; }
 section h3 {font-size: 24px; font-weight: 600;}
 button {cursor: pointer;line-height: 1;background: transparent;border: none;}
 .clrfix {content:""; display: block; clear: both;}
@@ -29,7 +29,7 @@ main .ch {font-family: 'Noto Sans TC';}
 #home {height: 100vh;padding-top: 0;background: url(../../img/bg.jpg) center;background-size: contain;}
 #home .home_bg {height:100%;position: relative;background: rgba(0,0,0,0.5);color: #FFF;text-align: center;}
 #home .home_txt {position: absolute;left: 50%;top: 50%;transform: translate(-50%, -80%)}
-#home .home_txt h2 {font-size: 50px;font-weight: 600;margin-bottom: 20px;}
+#home .home_txt h2 {color:#fff; font-size: 50px;font-weight: 600;margin-bottom: 20px;}
 
 /* butterfly 시작 */
 #home span.scroll {
@@ -74,7 +74,7 @@ main .ch {font-family: 'Noto Sans TC';}
 /* butterfly 끝 */
 
 /*About Me*/
-#about { color: #000; }
+#about { }
 /* introduce slide bar 시작 */
 #about .introduce { display: flex; background: #000; margin: 70px auto 70px auto; padding:0; width: 100%;
 }
@@ -90,7 +90,7 @@ main .ch {font-family: 'Noto Sans TC';}
 #about .detail.about_bg_3 {background: url(../../img/about_bg_1.jpg); background-size: contain; }
 #about .detail.about_bg_4 {background: url(../../img/about_bg_1.jpg); background-size: contain; }
 #about .detail.about_bg_5 {background: url(../../img/about_bg_5.jpg); background-size: contain; }
-#about .box.active { width: 70% !important; }
+#about .box.active { width: 60% !important; }
 #about .box.active .detail { opacity: 1; -webkit-transition-delay: 0.6s; -moz-transition-delay: 0.6s; 
 	-o-transition-delay: 0.6s; transition-delay: 0.6s; transform: none;
 }
@@ -114,7 +114,7 @@ main .ch {font-family: 'Noto Sans TC';}
 #about .profile ul li {padding:2px 0 ; text-align: center; }
 #about .profile .career {line-height: 1.3;} */
 
-#skill {color: #000; }
+#skill {}
 
 /* #skill ver_1 시작 */
 /* #skill{border: 3px solid #000; visibility: hidden;
@@ -224,7 +224,7 @@ font-size: 40px; color: #212121; font-weight: 100;
 #work2 .work_thumb strong {font-size: 24px;position: absolute;left: 50%;top: 50%;transform: translate(-50%, -50%);}
 #work2 .work_thumb i {display: block;margin-top: 15px;}
 
-#study {color: #000; }
+#study { }
 /*제이퀴리 탭 시작*/
 .tabs {
 	position: relative; width: 100%; overflow: hidden;
@@ -232,7 +232,7 @@ font-size: 40px; color: #212121; font-weight: 100;
 }
 
 /* Nav */
-.tabs nav { 	text-align: center; }
+.tabs nav { text-align: center; }
 .tabs nav ul {
 	padding: 0; margin: 0; list-style: none; display: inline-block;
 }
@@ -309,7 +309,7 @@ font-size: 40px; color: #212121; font-weight: 100;
 /*제이퀴리 탭 끝*/
 
 /*Contact*/
-#contact {min-height: 65vh; background: powderblue;}
+#contact {background: powderblue;}
 #contact .contact_info {text-align: center;}
 #contact .contact_info span {}
 #contact .sns {margin: 30px 0;}
