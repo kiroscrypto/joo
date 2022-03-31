@@ -10,30 +10,16 @@
   <!--CSS-->
   <link rel="stylesheet" href="web/css/fonts.css">
   <link rel="stylesheet" href="web/css/reset.css">
-    <!-- 원형차트용 시작-->
-  <!-- <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'> -->
-      <!-- 원형차트용 끝 -->
+
+  <link rel="stylesheet" href="web/fonts/style.css">
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
   <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
   <link rel="stylesheet" href="web/css/lightbox.css">
   <link rel="stylesheet" href="web/css/main.css">
 
-<!-- shazam 편집 시작 -->
-<link rel="stylesheet" type="text/css" href="skill/css/normalize.css" />
-<link rel="stylesheet" type="text/css" href="skill/css/icons.css" />
-<link rel="stylesheet" type="text/css" href="skill/css/demo.css" />
-<link rel="stylesheet" type="text/css" href="skill/css/component.css" />
-<!-- shazam 편집 끝-->
 
-  <!--JS-->
-  <!-- 슬라이드업 시작 -->
-  <!-- <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script> -->
-  <!-- 슬라이드업 끝 -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <!-- 원형차트용 시작-->
-  <!-- <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-circle-progress/1.2.0/circle-progress.min.js'></script>
-  <script src="web/js/function_circle.js"></script> -->
-    <!-- 원형차트용 끝 -->
   <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
   <script src="https://unpkg.com/isotope-layout@3.0.6/dist/isotope.pkgd.min.js"></script>
   <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
@@ -43,9 +29,7 @@
   <!-- introduce 시작 -->
   <script src="web/js/introduce.js"></script>
   <!-- introduce끝 -->
-  <!-- shazam 편집 시작 -->
-<script src="skill/js/modernizr-custom.js"></script>
-<!-- shazam 편집 끝-->
+  <script src="web/js/captionImgList.js"></script>
   <!--<script>
     $(function() {
       let elm = $('#home')
@@ -177,109 +161,79 @@
       <section id="skill">
         <h2>Skill</h2>
         <div class="container">
-          <!-- shazam 편집 시작 -->
-          <div class="content">
-            <!-- <p class="mobile-message">Scroll down to the button</p> -->
-            <div class="component" data-path-start="M280,466c0,0.13-0.001,0.26-0.003,0.39c-0.002,0.134-0.004,0.266-0.007,0.396
-          C279.572,482.992,266.307,496,250,496h-2.125H51.625H50c-16.316,0-29.592-13.029-29.99-29.249c-0.003-0.13-0.006-0.261-0.007-0.393
-          C20.001,466.239,20,466.119,20,466l0,0c0-0.141,0.001-0.281,0.003-0.422C20.228,449.206,33.573,436,50,436h1.625h196.25H250
-          c16.438,0,29.787,13.222,29.997,29.608C279.999,465.738,280,465.869,280,466L280,466z" data-path-listen="M181,466c0,0.13-0.001,0.26-0.003,0.39c-0.002,0.134-0.004,0.266-0.007,0.396
-          C180.572,482.992,167.307,496,151,496h-2.125h2.75H150c-16.316,0-29.592-13.029-29.99-29.249c-0.003-0.13-0.006-0.261-0.007-0.393
-          C120.001,466.239,120,466.119,120,466l0,0c0-0.141,0.001-0.281,0.003-0.422C120.228,449.206,133.573,436,150,436h1.625h-2.75H151
-          c16.438,0,29.787,13.222,29.997,29.608C180.999,465.738,181,465.869,181,466L181,466z" data-path-player="M290,40c0,0.13-0.001,380.26-0.003,380.39c-0.002,0.134,0.006,24.479,0.003,24.609 c0,
-          3.095-2.562,5.001-5,5.001h-27.125H41.625H15c-1.875,0-5-1.25-5-5.001c-0.003-0.13,0.004-24.509,0.003-24.641 C10.001,420.239,10,40.119,10,40l0,0c0-0.141-0.002-24.859,0-25c0,0,0-5,
-          5-5h26.625h216.25H285c2.438,0,5,1.906,5,5 C290.002,15.13,290,39.869,290,40L290,40z">
-              <!-- SVG with morphing paths and initial start button shape -->
-              <svg class="morpher" width="300" height="500">
-                <path class="morph__button" d="M280,466c0,0.13-0.001,0.26-0.003,0.39c-0.002,0.134-0.004,0.266-0.007,0.396
-          C279.572,482.992,266.307,496,250,496h-2.125H51.625H50c-16.316,0-29.592-13.029-29.99-29.249c-0.003-0.13-0.006-0.261-0.007-0.393
-          C20.001,466.239,20,466.119,20,466l0,0c0-0.141,0.001-0.281,0.003-0.422C20.228,449.206,33.573,436,50,436h1.625h196.25H250
-          c16.438,0,29.787,13.222,29.997,29.608C279.999,465.738,280,465.869,280,466L280,466z"/>
-              </svg>
-              <!-- Initial start button that switches into the recording button -->
-              <button class="button button--start">
-                <span class="button__content button__content--start">Click!</span>
-                <span class="button__content button__content--listen"><span class="icon icon--mouse"></span></span>
-              </button>
-              <!-- Music player -->
-              <div class="player player--hidden">
-                <img class="player__cover" src="skill/img/html.jpg" alt="html5" />
-                <div class="player__meta">
-                  <h3 class="player__track">HTML5</h3>
-                  <h3 class="player__album">
-                    <span>시멘틱한 구조 파악<br>웹표준 준수<br>웹접근성 고려</span>
-                    <span>50%</span>
-                  </h3>
+         
+          <!-- caption hover effects 시작-->
+          <ul class="clearFix captionImgList">
+            <li>
+              <a href="#" class="bg-green">
+                <div class="imgBox">
+                  <i class="icon-html">HTML5</i>
                 </div>
-                <button class="button button--close"><span class="icon icon--cross"></span></button>
-              </div><!-- /player -->
-            </div><!-- /component -->
-          </div><!-- /content -->
-          <!-- shazam 편집 끝-->
-
-          <!-- #skill ver_1 시작 -->
-          <!-- <div class="box1">
-            <h3>Web Design</h3>
-            <ul class="s1">
-              <li><img src="img/icon_html5.png" alt="html5"></li>
-              <li class="round"
-              data-value="0.85"
-              data-size="120"
-              data-thickness="6">
-                <strong></strong>
-              </li>
-              <li>시멘틱한 구조 파악<br>웹표준 준수<br>웹접근성 고려</li>
-            </ul>
-            <ul class="s1">
-              <li><img src="img/icon_css3.png" alt="css3"></li>
-              <li class="round"
-              data-value="0.8"
-              data-size="120"
-              data-thickness="6">
-                <strong></strong>
-              </li>
-              <li>CSS3 속성 이해<br>미디어쿼리 이해<br>디자인 시안 준수<br>반응형웹 제작</li>
-            </ul>
-            <ul class="s1">
-              <li><img src="img/icon_js.png" alt="자바스크립트"></li>
-              <li class="round"
-              data-value="0.7"
-              data-size="120"
-              data-thickness="6">
-                <strong></strong>
-              </li>
-              <li>description</li>
-            </ul>
-            <ul class="s1">
-              <li><img src="img/icon_jq.png" alt="제이쿼리"></li>
-              <li class="round"
-              data-value="0.65"
-              data-size="120"
-              data-thickness="6">
-                <strong></strong>
-              </li>
-              <li>이벤트 메소드 활용<br>플러그인 활용<br>효율적인 기능 구현</li>
-            </ul>
-            <ul class="s1">
-              <li><img src="img/icon_aips.png" alt="일러스트 포토샵"></li>
-              <li class="round"
-              data-value="0.75"
-              data-size="120"
-              data-thickness="6">
-                <strong></strong>
-              </li>
-              <li>각종 시안 제작<br>그래픽 디자인</li>
-            </ul>
-          </div>
-          <div class="box2 clrfix">
-            <h3>Documentation</h3>
-            <ul class="s2">
-              <li>기본 OA(한글, 엑셀, PPT) 활용 
-                / 자료수집 및 가공, 컨텐츠 기획과 구성 문서화 작업 / 
-                와이어프레임, 스토리보드 등의 PPT 제작 가능합니다.</li>
-            </ul>
-          </div> -->
-          <!-- #skill ver_1 끝-->
+                <div class="imgCaption">
+                  <span class="captionTitle">Cloud</span>
+                  <span class="captionAddition">Created by Google</span>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="bg-yellow">
+                <div class="imgBox">
+                  <i class="icon-css">CSS3</i>
+                </div>
+                <div class="imgCaption">
+                  <span class="captionTitle">wb_sunny</span>
+                  <span class="captionAddition">Created by Google</span>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="bg-gray">
+                <div class="imgBox">
+                  <i class="icon-js"></i>
+                  <span>자바스크립트</span>
+                </div>
+                <div class="imgCaption">
+                  <span class="captionTitle">star</span>
+                  <span class="captionAddition">Created by Google</span>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="bg-olive">
+                <div class="imgBox">
+                  <i class="icon-jq">jQuery</i>
+                </div>
+                <div class="imgCaption">
+                  <span class="captionTitle">face</span>
+                  <span class="captionAddition">Created by Google</span>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="bg-pink">
+                <div class="imgBox">
+                  <i class="icon-ps"><span> Photoshop</span></i>
+                </div>
+                <div class="imgCaption">
+                  <span class="captionTitle">pets</span>
+                  <span class="captionAddition">Created by Google</span>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="bg-lightgreen">
+                <div class="imgBox">
+                  <i class="icon-ai">Illustrator</i>
+                </div>
+                <div class="imgCaption">
+                  <span class="captionTitle">thumb_up</span>
+                  <span class="captionAddition">Created by Google</span>
+                </div>
+              </a>
+            </li>
+          </ul>
+          <!-- caption hover effects 끝-->
+          
         </div> <!--//container-->
       </section>
       <section id="work1" class="">
@@ -585,27 +539,6 @@
       <p class="copyright">&copy; 2022 Kimmy. All Rights Reserved. Minimum width 320px  |  Responsive Web</p>
     </footer>
   </div>
-<!-- 슬라이드업 시작 -->
-  <!-- <script>
-    $(window).scroll(function() {
-      $('#skill').each(function(){
-      var imagePos = $(this).offset().top;
-  
-      var topOfWindow = $(window).scrollTop();
-        if (imagePos < topOfWindow+400) {
-          $(this).addClass("slideUp");
-        }
-      });
-    });
-  </script> -->
-  <!-- 슬라이드업 끝 -->
-
-
-  <!-- shazam 편집 시작 -->
-		<script src="skill/js/classie.js"></script>
-		<script src="skill/js/snap.svg-min.js"></script>
-		<script src="skill/js/main.js"></script>
-<!-- shazam 편집 끝-->
 </body>
 </html>
 <!-- 
