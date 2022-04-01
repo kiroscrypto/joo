@@ -351,6 +351,37 @@ i {font-size: 50px; position: absolute;left: 50%; transform: translateX(-50% ); 
 			width: calc(50% - 10px);
 	}
 }
+
+.demo-img {
+  width: calc(25% - 10px);
+  margin: 5px;
+}
+
+@media (max-width: 500px) {
+  .demo-img {
+    width: calc(50% - 10px);
+  }
+}
+
+.demo-img>img {
+  border: 4px solid #e2e2e2;
+  border-radius: 4px;
+  width: 100%;
+  height: auto;
+  filter: grayscale(100%);
+  transition: filter .2s, border-color .2s;
+}
+
+.demo-img:hover>img {
+  filter: none;
+  border-color: #bbb;
+}
+
+@media (max-width: 768px) {
+  .demo-img>img {
+    border-width: 2px;
+  }
+}
 	/* Target elements 끝 */
 
 /* 탭메뉴 끝 */

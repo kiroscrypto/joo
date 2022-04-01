@@ -1,26 +1,24 @@
 jQuery(function () {
  
-
   // Modal
-
   new jBox('Modal', {
     attach: '#Modal-1',
-    height: 200,
-    title: "I'm a basic jBox modal window",
+    width: 800,
+    height: 330,
+    title: "CSS 텍스트 애니메이션",
     content:
-      '<div style="line-height: 30px;">Try to scroll ...it\'s blocked.<br>Press [ESC] or click anywhere to close.</div>'
+      '<div style="line-height: 30px;"><p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="rNpmwpq" data-user="kiroscrypto" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;"> <span>See the Pen <a href="https://codepen.io/kiroscrypto/pen/rNpmwpq"> Untitled</a> by kiroscrypto (<a href="https://codepen.io/kiroscrypto">@kiroscrypto</a>)  on <a href="https://codepen.io">CodePen</a>.</span> </p>  <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script></div>'
   });
 
   new jBox('Modal', {
     attach: '#Modal-2',
-    width: 350,
-    height: 200,
-    blockScroll: false,
+    width: 800,
+    height: 330,
     animation: 'zoomIn',
     draggable: 'title',
     closeButton: true,
-    content: 'You can move this modal window',
-    title: 'Click here to drag me around',
+    title: '텍스트 hover 이펙트',
+    content: '<div style="line-height: 30px;"><p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="RwxgWeW" data-user="kiroscrypto" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;"> <span>See the Pen <a href="https://codepen.io/kiroscrypto/pen/RwxgWeW"> Untitled</a> by kiroscrypto (<a href="https://codepen.io/kiroscrypto">@kiroscrypto</a>) on <a href="https://codepen.io">CodePen</a>.</span> </p> <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script></div>',
     overlay: false,
     reposition: false,
     repositionOnOpen: false
@@ -28,42 +26,19 @@ jQuery(function () {
 
   new jBox('Modal', {
     attach: '#Modal-3',
-    width: 450,
-    height: 250,
+    width: 800,
+    height: 330,
     closeButton: 'title',
     animation: false,
-    title: 'AJAX request',
-    ajax: {
-      url: 'https://reqres.in/api/users?delay=2',
-      data: {
-        id: '1982',
-        name: 'Stephan Wagner'
-      },
-      method: 'post',
-      reload: 'strict',
-      setContent: false,
-      beforeSend: function () {
-        this.setContent('');
-        this.setTitle(
-          '<div class="ajax-sending">Sending AJAX request...</div>'
-        );
-      },
-      complete: function () {
-        this.setTitle('<div class="ajax-complete">AJAX request complete</div>');
-      },
-      success: function (response) {
-        this.setContent(
-          '<div class="ajax-success">Response:<tt>' +
-            JSON.stringify(response) +
-            '</tt></div>'
-        );
-      },
-      error: function () {
-        this.setContent(
-          '<div class="ajax-error">Oops, something went wrong</div>'
-        );
-      }
-    }
+    title: 'Text spinners',
+    content: '<div style="line-height: 30px;"><p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="gOoWRYb" data-user="kiroscrypto" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;"> <span>See the Pen <a href="https://codepen.io/kiroscrypto/pen/gOoWRYb"> Untitled</a> by kiroscrypto (<a href="https://codepen.io/kiroscrypto">@kiroscrypto</a>) on <a href="https://codepen.io">CodePen</a>.</span> </p> <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script></div>',
   });
 
+});
+
+
+// Image
+new jBox('Image', {
+  imageCounter: true,
+  imageCounterSeparator: ' of '
 });
