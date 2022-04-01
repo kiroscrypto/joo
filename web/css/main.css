@@ -26,7 +26,7 @@ main .ch {font-family: 'Noto Sans TC';}
 
 
 /*Home*/
-#home {height: 100vh;padding-top: 0;background: url(../../img/bg.jpg) center;background-size: contain;}
+#home {height: 100vh;padding-top: 0;background: url(../../img/bg.jpg) center;background-size: cover;}
 #home .home_bg {height:100%;position: relative;background: rgba(0,0,0,0.5);color: #FFF;text-align: center;}
 #home .home_txt {position: absolute;left: 50%;top: 50%;transform: translate(-50%, -80%)}
 #home .home_txt h2 {color:#fff; font-size: 50px;font-weight: 600;margin-bottom: 20px;}
@@ -87,8 +87,8 @@ main .ch {font-family: 'Noto Sans TC';}
 
 #about .detail.about_bg_1 {background: url(../../img/about_bg_1.jpg); background-size: contain; }
 #about .detail.about_bg_2 {background: url(../../img/about_bg_2.jpg); background-size: contain; }
-#about .detail.about_bg_3 {background: url(../../img/about_bg_1.jpg); background-size: contain; }
-#about .detail.about_bg_4 {background: url(../../img/about_bg_1.jpg); background-size: contain; }
+#about .detail.about_bg_3 {background: url(../../img/about_bg_3.jpg); background-size: contain; }
+#about .detail.about_bg_4 {background: url(../../img/about_bg_4.jpg); background-size: contain; }
 #about .detail.about_bg_5 {background: url(../../img/about_bg_5.jpg); background-size: contain; }
 #about .box.active { width: 60% !important; }
 #about .box.active .detail { opacity: 1; -webkit-transition-delay: 0.6s; -moz-transition-delay: 0.6s; 
