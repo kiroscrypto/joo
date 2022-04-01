@@ -10,6 +10,7 @@
   <!--CSS-->
   <link rel="stylesheet" href="web/css/fonts.css">
   <link rel="stylesheet" href="web/css/reset.css">
+  <link rel="stylesheet" href="web/css/demo.css">
 
   <link rel="stylesheet" href="web/fonts/style.css">
 
@@ -17,7 +18,6 @@
   <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
   <link rel="stylesheet" href="web/css/lightbox.css">
   <link rel="stylesheet" href="web/css/main.css">
-
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
@@ -29,8 +29,23 @@
   <!-- introduce 시작 -->
   <script src="web/js/introduce.js"></script>
   <!-- introduce끝 -->
+    <!-- caption hover effects 시작 -->
   <script src="web/js/captionImgList.js"></script>
+    <!-- caption hover effects 끝-->
+  <!-- nav 시작 -->
+  <script src="web/js/nav.js"></script>
+    <script src="web/js/slidedown.js"></script>
+    <!-- nav 끝-->
+      <!-- modal 시작 -->
+  <script src="web/js/jBox_demo.js"></script>
+  <script src="web/js/jBox.all.min.js"></script>
+  <link href="web/css/jBox.all.min.css" rel="stylesheet">
+
+  <!-- <script src="https://cdn.jsdelivr.net/gh/StephanWagner/jBox@v1.3.3/dist/jBox.all.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/gh/StephanWagner/jBox@v1.3.3/dist/jBox.all.min.css" rel="stylesheet"> -->
+  <!-- modal 끝-->
   <!--<script>
+
     $(function() {
       let elm = $('#home')
   elm.each(function (index) {
@@ -164,19 +179,20 @@
          
           <!-- caption hover effects 시작-->
           <ul class="clearFix captionImgList">
-            <li>
-              <a href="#" class="bg-green">
+            <li class="bg-green">
+ 
                 <div class="imgBox">
                   <i class="icon-html">HTML5</i>
+                  <span class="index">80%</span>
                 </div>
                 <div class="imgCaption">
                   <span class="captionTitle">Cloud</span>
                   <span class="captionAddition">Created by Google</span>
                 </div>
-              </a>
+ 
             </li>
-            <li>
-              <a href="#" class="bg-yellow">
+            <li class="bg-yellow">
+ 
                 <div class="imgBox">
                   <i class="icon-css">CSS3</i>
                 </div>
@@ -184,22 +200,21 @@
                   <span class="captionTitle">wb_sunny</span>
                   <span class="captionAddition">Created by Google</span>
                 </div>
-              </a>
+ 
             </li>
-            <li>
-              <a href="#" class="bg-gray">
+            <li class="bg-gray">
+
                 <div class="imgBox">
-                  <i class="icon-js"></i>
-                  <span>자바스크립트</span>
+                  <i class="icon-js">JavaScript</i>
                 </div>
                 <div class="imgCaption">
                   <span class="captionTitle">star</span>
                   <span class="captionAddition">Created by Google</span>
                 </div>
-              </a>
+ 
             </li>
-            <li>
-              <a href="#" class="bg-olive">
+            <li class="bg-olive">
+ 
                 <div class="imgBox">
                   <i class="icon-jq">jQuery</i>
                 </div>
@@ -207,21 +222,21 @@
                   <span class="captionTitle">face</span>
                   <span class="captionAddition">Created by Google</span>
                 </div>
-              </a>
+ 
             </li>
-            <li>
-              <a href="#" class="bg-pink">
+            <li class="bg-pink">
+
                 <div class="imgBox">
-                  <i class="icon-ps"><span> Photoshop</span></i>
+                  <i class="icon-ps">Photoshop</i>
                 </div>
                 <div class="imgCaption">
                   <span class="captionTitle">pets</span>
                   <span class="captionAddition">Created by Google</span>
                 </div>
-              </a>
+
             </li>
-            <li>
-              <a href="#" class="bg-lightgreen">
+            <li class="bg-lightgreen">
+
                 <div class="imgBox">
                   <i class="icon-ai">Illustrator</i>
                 </div>
@@ -229,7 +244,7 @@
                   <span class="captionTitle">thumb_up</span>
                   <span class="captionAddition">Created by Google</span>
                 </div>
-              </a>
+ 
             </li>
           </ul>
           <!-- caption hover effects 끝-->
@@ -359,150 +374,32 @@
         </div>
       </section>
       <section id="study" class="">
-        <!--코딩 공부-->
         <div class="container">
           <h2>Study</h2>
-        <!--제이퀴리 탭 시작-->
-        <div id="tabs" class="tabs">
-          <nav>
-            <ul>
-              <li><a href="#section-1"><h3>Text Effects</h3></a></li>
-              <li><a href="#section-2"><h3>Animation</h3></a></li>
-              <li><a href="#section-3"><h3>jQuery</h3></a></li>
-              <li><a href="#section-4"><h3>JavaScript</h3></a></li>
-              <li><a href="#section-5"><h3>Design</h3></a></li>
-            </ul>
-          </nav>
-          <div class="contents">
-            <section id="section-1">
-              <div class="mediabox">
-                <h4>CSS 텍스트 애니메이션</h4>
-                <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="rNpmwpq" data-user="kiroscrypto" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-                  <span>See the Pen <a href="https://codepen.io/kiroscrypto/pen/rNpmwpq">
-                  Untitled</a> by kiroscrypto (<a href="https://codepen.io/kiroscrypto">@kiroscrypto</a>)
-                  on <a href="https://codepen.io">CodePen</a>.</span>
-                </p>
-                <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+           <!-- 탭메뉴 시작 -->
+          <ul class="nav">
+          <li><span>Text Effects</span></li>
+          <li><span>Animation</span></li>
+          <li><span>jQuery</span></li>
+          <li><span>JavaScript</span></li>
+          <li><span>Design</span></li>
+          <li class="slide"></li>
+          </ul>
 
-                <h4>텍스트 hover 이펙트</h4>
-                <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="RwxgWeW" data-user="kiroscrypto" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-                  <span>See the Pen <a href="https://codepen.io/kiroscrypto/pen/RwxgWeW">
-                  Untitled</a> by kiroscrypto (<a href="https://codepen.io/kiroscrypto">@kiroscrypto</a>)
-                  on <a href="https://codepen.io">CodePen</a>.</span>
-                </p>
-                <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
-
-                <h4>Text spinners</h4>
-                <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="gOoWRYb" data-user="kiroscrypto" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-                  <span>See the Pen <a href="https://codepen.io/kiroscrypto/pen/gOoWRYb">
-                  Untitled</a> by kiroscrypto (<a href="https://codepen.io/kiroscrypto">@kiroscrypto</a>)
-                  on <a href="https://codepen.io">CodePen</a>.</span>
-                </p>
-                <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
-              </div>
-            </section>
-            <section id="section-2">
-              <div class="mediabox">
-                <h4>햄버거 메뉴</h4>
-                <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="QWavvPG" data-user="kiroscrypto" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-                  <span>See the Pen <a href="https://codepen.io/kiroscrypto/pen/QWavvPG">
-                  Untitled</a> by kiroscrypto (<a href="https://codepen.io/kiroscrypto">@kiroscrypto</a>)
-                  on <a href="https://codepen.io">CodePen</a>.</span>
-                </p>
-                <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
-
-                <h4>햄버거 메뉴</h4>
-                <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="QWavvPG" data-user="kiroscrypto" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-                  <span>See the Pen <a href="https://codepen.io/kiroscrypto/pen/QWavvPG">
-                  Untitled</a> by kiroscrypto (<a href="https://codepen.io/kiroscrypto">@kiroscrypto</a>)
-                  on <a href="https://codepen.io">CodePen</a>.</span>
-                </p>
-                <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
-
-                <h4>햄버거 메뉴</h4>
-                <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="QWavvPG" data-user="kiroscrypto" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-                  <span>See the Pen <a href="https://codepen.io/kiroscrypto/pen/QWavvPG">
-                  Untitled</a> by kiroscrypto (<a href="https://codepen.io/kiroscrypto">@kiroscrypto</a>)
-                  on <a href="https://codepen.io">CodePen</a>.</span>
-                </p>
-                <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
-              </div>
-              
-            </section>
-            <section id="section-3">
-              <div class="mediabox">
-                <h4>Noodle Curry</h4>
-                <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="WNdjjxe" data-user="kiroscrypto" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-                  <span>See the Pen <a href="https://codepen.io/kiroscrypto/pen/WNdjjxe">
-                  Untitled</a> by kiroscrypto (<a href="https://codepen.io/kiroscrypto">@kiroscrypto</a>)
-                  on <a href="https://codepen.io">CodePen</a>.</span>
-                </p>
-                <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
-              </div>
-              <div class="mediabox">
-                <img src="img/06.png" alt="img06" />
-                <h4>Leek Wasabi</h4>
-                <p>Sushi gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard greens dandelion okra wakame tomato.</p>
-              </div>
-              <div class="mediabox">
-                <img src="img/01.png" alt="img01" />
-                <h4>Green Tofu Wrap</h4>
-                <p>Pea horseradish azuki bean lettuce avocado asparagus okra. Kohlrabi radish okra azuki bean corn fava bean mustard tigernut wasabi tofu broccoli mixture soup.</p>
-              </div>
-            </section>
-            <section id="section-4">
-              <div class="mediabox">
-                <h4>디지털 시계</h4>
-                <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="gOoWRMa" data-user="kiroscrypto" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-                  <span>See the Pen <a href="https://codepen.io/kiroscrypto/pen/gOoWRMa">
-                  Untitled</a> by kiroscrypto (<a href="https://codepen.io/kiroscrypto">@kiroscrypto</a>)
-                  on <a href="https://codepen.io">CodePen</a>.</span>
-                </p>
-                <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
-
-                <h4>디지털 시계</h4>
-                <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="gOoWRMa" data-user="kiroscrypto" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-                  <span>See the Pen <a href="https://codepen.io/kiroscrypto/pen/gOoWRMa">
-                  Untitled</a> by kiroscrypto (<a href="https://codepen.io/kiroscrypto">@kiroscrypto</a>)
-                  on <a href="https://codepen.io">CodePen</a>.</span>
-                </p>
-                <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
-
-                <h4>디지털 시계</h4>
-                <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="gOoWRMa" data-user="kiroscrypto" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-                  <span>See the Pen <a href="https://codepen.io/kiroscrypto/pen/gOoWRMa">
-                  Untitled</a> by kiroscrypto (<a href="https://codepen.io/kiroscrypto">@kiroscrypto</a>)
-                  on <a href="https://codepen.io">CodePen</a>.</span>
-                </p>
-                <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
-                </div>
-            </section>
-            <section id="section-5">
-              <div class="mediabox">
-                <img src="img/02.png" alt="img02" />
-                <h4>SVG</h4>
-                <p>Catsear cauliflower garbanzo yarrow salsify chicory garlic bell pepper napa cabbage lettuce tomato kale arugula melon sierra leone bologi rutabaga tigernut.</p>
-              </div>
-              <div class="mediabox">
-                <img src="img/06.png" alt="img06" />
-                <h4>Fennel Wasabi</h4>
-                <p>Sea lettuce gumbo grape kale kombu cauliflower salsify kohlrabi okra sea lettuce broccoli celery lotus root carrot winter purslane turnip greens garlic.</p>
-              </div>
-              <div class="mediabox">
-                <img src="img/01.png" alt="img01" />
-                <h4>Red Tofu Wrap</h4>
-                <p>Green horseradish azuki bean lettuce avocado asparagus okra. Kohlrabi radish okra azuki bean corn fava bean mustard tigernut wasabi tofu broccoli mixture soup.</p>
-              </div>
-            </section>
-          </div><!-- /content -->
-        </div><!-- /tabs -->
-        </div>
-        <script src="web/js/cbpFWTabs.js"></script>
-        <script>
-        new CBPFWTabs( document.getElementById( 'tabs' ) );
-        </script>
-        <!--제이퀴리 탭 끝-->
-        </div>
+          <div class="a targets-wrapper">
+            <div id="Modal-1" class="target-click">Click me</div>
+            <div id="Modal-2" class="target-click">Click me</div>
+            <div id="Modal-3" class="target-click">Click me</div>
+            <div class="target-click" data-confirm onclick="new jBox('Notice', {content: 'Yay! You clicked the confirm button', color: 'green', attributes: {y: 'bottom'}})">Click me</div>
+          </div>
+          <div class="sub"></div>
+          <div class="sub"></div>
+          <div class="sub"></div>
+          <div class="sub"></div>
+          <div class="sub"></div>
+          <div class="sub"></div>
+           <!-- 탭메뉴  끝 -->
+       </div>
       </section>
       <section id="contact" class="">
         <!--연락처 : 전화번호(학원전화번호), 이메일, sns, 오픈 카톡-->
