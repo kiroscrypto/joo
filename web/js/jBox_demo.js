@@ -78,6 +78,21 @@ jQuery(function () {
   });
 
   new jBox('Modal', {
+    attach: '#Modal-6',
+    width: 720,
+    height: 330,
+    blockScroll: false,
+    animation: 'zoomIn',
+    draggable: 'title',
+    closeButton: true,
+    title: 'CSS image hover Effects !Draggable!',
+    content: '<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="ZYNOBZ" data-user="nxworld" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;"> <span>See the Pen <a href="https://codepen.io/nxworld/pen/ZYNOBZ"> Demo: CSS image hover effects</a> by Naoya (<a href="https://codepen.io/nxworld">@nxworld</a>) on <a href="https://codepen.io">CodePen</a>.</span> </p> <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>',
+    overlay: false,
+    reposition: false,
+    repositionOnOpen: false
+  });
+
+  new jBox('Modal', {
     attach: '#Modal-a1',
     width: 720,
     height: 330,
