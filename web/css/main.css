@@ -102,8 +102,8 @@ main .ch {font-family: 'Noto Sans TC';}
 #about p { line-height: 23px; }
 /* introduce slide bar 끝 */
 
-#skill {background:#2A4F68}
-#skill h2 {color: #fff;}
+#skill {background:#ededed}
+#skill h2 {color: #000;}
 	/* caption hover effects 시작 */
 .captionImgList { 
 	width: 100%;
@@ -114,7 +114,7 @@ main .ch {font-family: 'Noto Sans TC';}
   margin-right: 15px;
 		margin-bottom: 45px;
   overflow: hidden;
-		background: rgba(255,255,255,0.3);
+		background: rgba(255,255,255,0.9);
 }
 .captionImgList li:nth-child(3n) {
   margin-right: 0;
@@ -137,7 +137,7 @@ main .ch {font-family: 'Noto Sans TC';}
   vertical-align: middle;
   color: #000;
 }
-.imgBox .index {font-size: 100px; color: rgba(179, 180, 182, 0.4);
+.imgBox .index {font-size: 100px; color: rgba(182, 179, 182, 0.6);
 	position: absolute;left: 50%; transform: translateX(-50% );  bottom: 15%;}
 /* icomoon font 시작 */
 i {font-size: 50px; position: absolute;left: 50%; transform: translateX(-50% );  top: 10%; }
@@ -231,6 +231,8 @@ i {font-size: 50px; position: absolute;left: 50%; transform: translateX(-50% ); 
 	line-height: 1.1;
 	background: linear-gradient(110deg, #333 50%, #444 50%); 
 }
+#study h3 {text-align: center;}
+#study .targets-wrapper {margin-bottom: 40px;}
 
 	/* Target elements 시작 */
 
