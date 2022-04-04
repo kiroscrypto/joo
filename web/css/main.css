@@ -75,6 +75,7 @@ main .ch {font-family: 'Noto Sans TC';}
 
 /*About Me*/
 #about { }
+#about P {line-height: 3em; padding: 10px 0;}
 /* introduce slide bar 시작 */
 #about .introduce { display: flex; background: #000; margin: 70px auto 70px auto; padding:0; width: 100%;
 }
