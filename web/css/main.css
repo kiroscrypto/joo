@@ -300,8 +300,8 @@ i {font-size: 50px; position: absolute;left: 50%; transform: translateX(-50% ); 
 
 /*Contact*/
 #contact {background: powderblue;}
-#contact div {margin: 50px 0;}
-#contact .contact_info {text-align: center;margin-top: 200px;}
+#contact .m {margin-bottom: 50px;}
+#contact .contact_info {text-align: center; margin-top: 200px;}
 #contact .contact_info span {line-height: 1.5em;}
 #contact .sns {text-align: center;}
 #contact .sns img {padding: 0 10px;}
@@ -335,5 +335,5 @@ to {
 #contact #clockday { color: #f4f4f4; font-family:'NanumSquare';font-size: 18px;  } 
 
 /*footer*/
-footer {background:#303A48; font-size: 14px; font-weight: 400; color: #999; padding: 20px 0;}
+footer {background:#303A48; font-size: 14px; font-weight: 400; color: #999; padding: 50px 0;}
 footer p {text-align: center; line-height: 1.3; font-weight: 200;}
