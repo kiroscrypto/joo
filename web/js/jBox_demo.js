@@ -10,8 +10,8 @@ jQuery(function () {
     animation: 'zoomIn',
     draggable: 'title',
     closeButton: true,
-    title: 'CSS Box Hover 효과 !Draggable!',
-    content: '<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="AxBReL" data-user="IanLunn" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;"> <span>See the Pen <a href="https://codepen.io/IanLunn/pen/AxBReL"> Hover.css</a> by Ian Lunn (<a href="https://codepen.io/IanLunn">@IanLunn</a>) on <a href="https://codepen.io">CodePen</a>.</span> </p> <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>',
+    title: 'CSS Button Hover 이펙트 1 !Draggable!',
+    content: '<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="wBBLXx" data-user="kjbrum" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;"> <span>See the Pen <a href="https://codepen.io/kjbrum/pen/wBBLXx"> Button Hover Effects</a> by Kyle Brumm (<a href="https://codepen.io/kjbrum">@kjbrum</a>) on <a href="https://codepen.io">CodePen</a>.</span> </p> <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>',
     overlay: false,
     reposition: false,
     repositionOnOpen: false
@@ -19,6 +19,21 @@ jQuery(function () {
 
   new jBox('Modal', {
     attach: '#Modal-2',
+    width: 720,
+    height: 330,
+    blockScroll: false,
+    animation: 'zoomIn',
+    draggable: 'title',
+    closeButton: true,
+    title: 'CSS Button Hover 이펙트 2 !Draggable!',
+    content: '<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="AxBReL" data-user="IanLunn" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;"> <span>See the Pen <a href="https://codepen.io/IanLunn/pen/AxBReL"> Hover.css</a> by Ian Lunn (<a href="https://codepen.io/IanLunn">@IanLunn</a>) on <a href="https://codepen.io">CodePen</a>.</span> </p> <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>',
+    overlay: false,
+    reposition: false,
+    repositionOnOpen: false
+  });
+
+  new jBox('Modal', {
+    attach: '#Modal-3',
     width: 720,
     height: 330,
     blockScroll: false,
@@ -33,7 +48,7 @@ jQuery(function () {
   });
 
   new jBox('Modal', {
-    attach: '#Modal-3',
+    attach: '#Modal-4',
     width: 720,
     height: 330,
     blockScroll: false,
@@ -48,7 +63,7 @@ jQuery(function () {
   });
 
   new jBox('Modal', {
-    attach: '#Modal-4',
+    attach: '#Modal-5',
     width: 720,
     height: 330,
     blockScroll: false,
@@ -63,7 +78,7 @@ jQuery(function () {
   });
 
   new jBox('Modal', {
-    attach: '#Modal-5',
+    attach: '#Modal-6',
     width: 720,
     height: 330,
     blockScroll: false,
@@ -78,7 +93,7 @@ jQuery(function () {
   });
 
   new jBox('Modal', {
-    attach: '#Modal-6',
+    attach: '#Modal-7',
     width: 720,
     height: 330,
     blockScroll: false,
@@ -87,6 +102,21 @@ jQuery(function () {
     closeButton: true,
     title: 'CSS image hover Effects !Draggable!',
     content: '<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="ZYNOBZ" data-user="nxworld" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;"> <span>See the Pen <a href="https://codepen.io/nxworld/pen/ZYNOBZ"> Demo: CSS image hover effects</a> by Naoya (<a href="https://codepen.io/nxworld">@nxworld</a>) on <a href="https://codepen.io">CodePen</a>.</span> </p> <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>',
+    overlay: false,
+    reposition: false,
+    repositionOnOpen: false
+  });
+
+  new jBox('Modal', {
+    attach: '#Modal-8',
+    width: 720,
+    height: 330,
+    blockScroll: false,
+    animation: 'zoomIn',
+    draggable: 'title',
+    closeButton: true,
+    title: 'CSS image hover Effects !Draggable!',
+    content: '<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="MYdBKz" data-user="vavik96" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;"> <span>See the Pen <a href="https://codepen.io/vavik96/pen/MYdBKz"> Hover Effect Ideas-2</a> by vavik (<a href="https://codepen.io/vavik96">@vavik96</a>) on <a href="https://codepen.io">CodePen</a>.</span> </p> <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>',
     overlay: false,
     reposition: false,
     repositionOnOpen: false
