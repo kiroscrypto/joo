@@ -138,7 +138,7 @@ main .ch {font-family: 'Noto Sans TC';}
   vertical-align: middle;
   color: #000;
 }
-.imgBox .index {font-size: 100px; color: rgba(182, 179, 182, 0.6);
+.imgBox .index {font-size: 90px; color: rgba(182, 179, 182, 0.6);
 	position: absolute;left: 50%; transform: translateX(-50% );  bottom: 15%;}
 /* icomoon font 시작 */
 i {font-size: 50px; position: absolute;left: 50%; transform: translateX(-50% );  top: 10%; }
