@@ -197,8 +197,10 @@ i {font-size: 40px; color: #1A2227; position: absolute;left: 50%; transform: tra
 /*Web Work*/
 #work1 {background: #1A2227;position: relative;}
 #work1 h2 {color: #fff;}
-#work1 .web_swiper {width: 1200px;height: 500px;margin: auto;position: relative;}
-#work1 .web_slide {width: 1200px;float: left;height: 500px;background: #fff;}
+#work1 .web_swiper {width: 100%;height: 500px;margin: auto;position: relative;}
+#work1 .web_slide {width: 100%;float: left;height: 500px;background: #fff;}
+/* #work1 .web_swiper {width: 1200px;height: 500px;margin: auto;position: relative;}
+#work1 .web_slide {width: 1200px;float: left;height: 500px;background: #fff;} */
 #work1 .web_slide:after {content:""; display: block;clear: both;}
 #work1 .web_slide img {float: right;width: 60%;height: 100%;background-size: cover !important;}
 #work1 .web_slide img.web1 {background: url(../../img/web_1.png) center;}
@@ -209,7 +211,8 @@ i {font-size: 40px; color: #1A2227; position: absolute;left: 50%; transform: tra
 #work1 .web_slide .web_txt .link a {display: inline-block;padding: 15px 20px;border: 1px solid #999;border-radius: 5px;color: #999;margin-right: 10px;}
 #work1 .web_prev {position: absolute;left: calc(50% - 670px);top: 40%;}
 #work1 .web_next {position: absolute;right: calc(50% - 690px);top: 40%;}
-#work1 .web_scrollbar {width: 1200px;height: 3px;margin: auto;background: #ededed;}
+#work1 .web_scrollbar {width: 100%;height: 3px;margin: auto;background: #ededed;}
+/* #work1 .web_scrollbar {width: 1200px;height: 3px;margin: auto;background: #ededed;} */
 #work1 .web_pagination {width: auto;position: absolute;left: auto;right: 20px;top: 20px;bottom: auto;z-index: 10;font-size: 14px;font-weight: 600;}
 #work1 .web_pagination span {display: inline-block;margin: 0 3px;vertical-align: middle;font-size: 24px;}
 
