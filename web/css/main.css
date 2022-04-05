@@ -116,6 +116,7 @@ main .ch {font-family: 'Noto Sans TC';}
   margin-right: 15px;
 		margin-bottom: 45px;
   overflow: hidden;
+		cursor: pointer;
 		background: rgba(255,255,255,0.9);
 }
 .captionImgList li:nth-child(3n) {
@@ -405,18 +406,20 @@ footer p {text-align: center; line-height: 1.3; font-weight: 200;}
 
 /* 모바일 */
 @media screen and (max-width:767px) {
+/* common */
+	section h2 {margin-bottom: 26px; center;font-size: 30px;}
 
 	header #gnb {display: none;}
+ /* main */
 	/*About Me*/
 /* introduce slide bar 시작 */
 
 /* introduce slide bar 끝 */
 
 #work1 .web_slide img {width: 40% }
-#work1 .web_swiper, .web_slide, .web_scrollbar {width: 65%; }
 
-#work1 .web_prev {position: absolute;left: calc(50% - 5px);top: 40%;}
-#work1 .web_next {position: absolute;right: calc(50% - 5px);top: 40%;}
+#work1 .web_swiper, .web_slide, .web_scrollbar {width: 65%; }
+#work1 .web_prev, .web_next {display: none;}
 
 /* caption hover effects 시작 */
 .captionImgList li {
