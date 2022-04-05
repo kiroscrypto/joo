@@ -78,7 +78,7 @@ main .ch {font-family: 'Noto Sans TC';}
 #about h2 {color: #fff;}
 #about P {line-height: 3em; padding: 10px 0;}
 /* introduce slide bar 시작 */
-#about .introduce { display: flex; background: #1A2227; margin: 70px auto 70px auto; padding:0; width: 100%;
+#about .introduce {display: flex; background: #1A2227; margin: 70px auto 70px auto; padding:0; width: 100%;
 }
 #about .box {height: 70vh; padding:15px; border-right: 1px solid white; -webkit-transition: 0.8s; 
 	-o-transition: 0.8s; transition: 0.8s; position: relative; overflow: hidden; list-style: none;
@@ -393,3 +393,22 @@ to {
 /*footer*/
 footer {background:#1A2227; font-size: 14px; font-weight: 400; color: #999; padding: 50px 0;}
 footer p {text-align: center; line-height: 1.3; font-weight: 200;}
+
+
+
+/* 타블렛 */
+@media screen and (max-width:1023px) {
+}
+
+/* 모바일 */
+@media screen and (max-width:767px) {
+	/*About Me*/
+/* introduce slide bar 시작 */
+#about .introduce {display: block;width: 100%;}
+#about .box {height: 300px; }
+#about .detail {width: 86%; }
+#about .box.active { width: 100% !important;}
+/* introduce slide bar 끝 */
+
+}
+ 
