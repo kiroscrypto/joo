@@ -74,35 +74,135 @@ main .ch {font-family: 'Noto Sans TC';}
 /* butterfly 끝 */
 
 /*About Me*/
-#about {background: #1A2227; }
-#about h2 {color: #fff;}
-#about P {line-height: 3em; padding: 10px 0;}
-/* introduce slide bar 시작 */
-#about .introduce {display: flex; background: #1A2227; margin: 70px auto 70px auto; padding:0; width: 100%;
-}
-#about .box {height: 70vh; padding:15px; border-right: 1px solid white; -webkit-transition: 0.8s; 
-	-o-transition: 0.8s; transition: 0.8s; position: relative; overflow: hidden; list-style: none;
-}
-#about .detail {width: 85%; height: 100%; position: absolute; right: 0; top:0; color:black; opacity: 0; padding:30px; 
-	box-sizing:border-box; -webkit-transition: 0.8s; -o-transition: 0.8s; transition: 0.8s; -webkit-transform: translateY(100%);  
-	transform: translateY(100%);}
+#about {}
+#about h2 {color: #000;}
 
-#about .detail.about_bg_1 {background: url(../../img/about_bg_1.jpg); background-size: contain; }
-#about .detail.about_bg_2 {background: url(../../img/about_bg_2.jpg); background-size: contain; }
-#about .detail.about_bg_3 {background: url(../../img/about_bg_3.jpg); background-size: contain; }
-#about .detail.about_bg_4 {background: url(../../img/about_bg_4.jpg); background-size: contain; }
-#about .detail.about_bg_5 {background: url(../../img/about_bg_5.jpg); background-size: contain; }
-#about .box.active { width: 60% !important; }
-#about .box.active .detail { opacity: 1; -webkit-transition-delay: 0.6s; -moz-transition-delay: 0.6s; 
-	-o-transition-delay: 0.6s; transition-delay: 0.6s; transform: none;
+/* accordion 시작 */
+
+.accordion {
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+  margin: 0px auto;
 }
-#about .box span { writing-mode: vertical-rl; font-size: 20px; height: 100%; display: flex; 
-	align-items: center; justify-content: center; color: #fff; letter-spacing: 4px;  width: 40px; font-weight: 400; cursor: pointer; 
-	position: absolute; left: 0; right: 0; margin: 0 auto; 
+
+.accordion ul {
+  width: 100%;
+  display: table;
+  table-layout: fixed;
+  margin: 0;
+  padding: 0;
 }
-#about .box.active span { left:25px; right:auto; margin:0; font-weight:600 }
-#about p { line-height: 23px; }
-/* introduce slide bar 끝 */
+
+.accordion ul li {
+  display: table-cell;
+  vertical-align: bottom;
+  position: relative;
+  width: 20%;
+  height: 500px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  transition: all 500ms ease-in-out;
+}
+
+.accordion ul li div.sliderLink {
+  display: block;
+  overflow: hidden;
+  width: 100%;
+}
+
+.accordion ul li div.sliderLink {
+  display: block;
+  height: 500px;
+  width: 100%;
+  position: relative;
+  z-index: 3;
+  vertical-align: bottom;
+  padding: 120px 80px;
+  box-sizing: border-box;
+  color: #fff;
+  /* text-shadow: 1px 1px 2px #000; */
+  /*filter: invert(100%);*/
+  text-decoration: none;
+  font-family: Open Sans, sans-serif;
+  transition: all 300ms ease-in-out;
+}
+
+.accordion ul li div.sliderLink * {
+  opacity: 0;
+  margin: 0;
+  width: 100%;
+  text-overflow: ellipsis;
+  position: relative;
+  z-index: 5;
+  white-space: nowrap;
+  overflow: hidden;
+  -webkit-transform: translateX(-20px);
+  transform: translateX(-20px);
+  -webkit-transition: all 400ms ease-in-out;
+  transition: all 400ms ease-in-out;
+}
+.accordion ul li div.sliderLink span {
+  font-family: Montserrat, sans-serif;
+  text-overflow: clip;
+  font-size: 28px;
+	font-weight: 500;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  top: 10px;
+}
+
+.accordion ul li div.sliderLink p {
+  top: 30px;
+  font-size: 18px;
+	margin-bottom: 10px;
+	line-height: 1.5;
+}
+
+.accordion ul li div.sliderLink .goal {
+  font-size: 26px;
+  margin-top: 20px;
+	color: rgb(206, 140, 134);
+	font-style: italic;
+}
+
+.accordion ul li:nth-child(1) { 
+  background-image: url("../../img/about_bg_1.png"); 
+  background-position: 80% 100%;
+}
+
+.accordion ul li:nth-child(2) { 
+  background-image: url("../../img/about_bg_2.png"); 
+ background-position: 80% 100%;
+}
+
+.accordion ul li:nth-child(3) { 
+  background-image: url("../../img/about_bg_3.png"); 
+background-position: 80% 100%;
+}
+
+.accordion ul li:nth-child(4) { 
+  background-image: url("../../img/about_bg_4.png"); 
+  background-position: 80% 100%;
+}
+
+.accordion ul li:nth-child(5) { 
+  background-image: url("../../img/about_bg_5.png"); 
+  background-position:80% 100%;
+}
+
+.accordion ul li { background-size: cover; }
+.accordion ul:hover li { width: 20%; }
+.accordion ul:hover li:hover { width: 70%; }
+
+.accordion ul:hover li:hover div.sliderLink { background: rgba(26, 34, 39, 0.7); }
+
+.accordion ul:hover li:hover div.sliderLink * {
+  opacity: 1;
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+}
+/* accordion 끝 */
 
 #skill {background:#ededed}
 #skill h2 {color: #000;}
@@ -412,9 +512,26 @@ footer p {text-align: center; line-height: 1.3; font-weight: 200;}
 	header #gnb {display: none;}
  /* main */
 	/*About Me*/
-/* introduce slide bar 시작 */
+/* accordion 시작 */
+.accordion { height: auto; }
 
-/* introduce slide bar 끝 */
+.accordion ul li,
+.accordion ul li:hover,
+.accordion ul:hover li,
+.accordion ul:hover li:hover {
+	position: relative;
+	display: table;
+	table-layout: fixed;
+	width: 100%;
+	-webkit-transition: none;
+	transition: none;
+}
+.accordion ul li div.sliderLink * {
+	opacity: 0;
+	-webkit-transform: translateX(0);
+	transform: translateX(0);
+}
+/* accordion 끝 */
 
 #work1 .web_slide img {width: 40% }
 
