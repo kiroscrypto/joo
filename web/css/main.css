@@ -293,7 +293,7 @@ i {font-size: 40px; color: #1A2227; position: absolute;left: 50%; transform: tra
 	color: #49d;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
 
 	.target,
 	.target-click,
@@ -405,10 +405,18 @@ footer p {text-align: center; line-height: 1.3; font-weight: 200;}
 
 /* 모바일 */
 @media screen and (max-width:767px) {
+
+	header #gnb {display: none;}
 	/*About Me*/
 /* introduce slide bar 시작 */
 
 /* introduce slide bar 끝 */
+
+#work1 .web_slide img {width: 40% }
+#work1 .web_swiper, .web_slide, .web_scrollbar {width: 65%; }
+
+#work1 .web_prev {position: absolute;left: calc(50% - 5px);top: 40%;}
+#work1 .web_next {position: absolute;right: calc(50% - 5px);top: 40%;}
 
 /* caption hover effects 시작 */
 .captionImgList { 
