@@ -29,6 +29,9 @@
   <!-- caption hover effects 시작 -->
   <script src="web/js/captionImgList.js"></script>
   <!-- caption hover effects 끝-->
+  <!-- study_tab 시작 -->
+  <script src="web/js/study_tab.js"></script>
+  <!-- study_tab 끝 -->
   <!-- modal 시작 -->
   <script src="web/js/jBox_demo.js"></script>
   <script src="web/js/jBox.all.min.js"></script>
@@ -339,9 +342,21 @@
       <section id="study" class="">
         <div class="container">
           <h2>Study</h2>
+           <!-- Tab 시작  -->
+          <div class="tab-wrapper">
+            <ul class="tabs">
+                <li class="tab-link active" data-tab="1"><h3>Text/IMG Effects</h3></li>
+                <li class="tab-link" data-tab="2"><h3>Animation</h3></li>
+                <li class="tab-link" data-tab="3"><h3>jQuery</h3></li>
+                <li class="tab-link" data-tab="4"><h3>JavaScript</h3></li>
+                <li class="tab-link" data-tab="5"><h3>Design</h3></li>
+            </ul>
+          </div>
+           <!-- Tab 끝  -->
+
            <!-- Target elements 시작  -->
-          <div><h3>Text/IMG Effects</h3></div>
-          <div class="targets-wrapper on">
+          <!-- <div><h3>Text/IMG Effects</h3></div> -->
+          <div id="tab-1" class="targets-wrapper on tab-content active">
             <div id="Modal-1" class="target-click">CSS Button Hover 이펙트 1</div>
             <div id="Modal-2" class="target-click">CSS Button Hover 이펙트 2</div>
             <div id="Modal-3" class="target-click">CSS Icon Hover Effects 1</div>
@@ -352,29 +367,29 @@
             <div id="Modal-8" class="target-click">CSS image hover Effects 2</div>
           </div>
 
-          <div><h3>Animation</h3></div>
-          <div class="targets-wrapper">
+          <!-- <div><h3>Animation</h3></div> -->
+          <div id="tab-2" class="targets-wrapper tab-content">
             <div id="Modal-a1" class="target-click">햄버거 메뉴</div>
             <div id="Modal-a2" class="target-click">나비 CSS 애니메이션</div>
             <div id="Modal-a3" class="target-click">CSS 텍스트 애니메이션</div>
           </div>
 
-          <div><h3>jQuery</h3></div>
-          <div class="targets-wrapper">
+          <!-- <div><h3>jQuery</h3></div> -->
+          <div id="tab-3" class="targets-wrapper tab-content">
             <div id="Modal-b1" class="target-click">Progress Bar</div>
             <div id="Modal-b2" class="target-click">텍스트 hover 이펙트</div>
             <div id="Modal-b3" class="target-click">Text Spinners</div>
           </div>
 
-          <div><h3>JavaScript</h3></div>
-          <div class="targets-wrapper">
+          <!-- <div><h3>JavaScript</h3></div> -->
+          <div id="tab-4" class="targets-wrapper tab-content">
             <div id="Modal-c1" class="target-click">디지털 시계</div>
             <div id="Modal-c2" class="target-click">디지털 시계</div>
             <div id="Modal-c3" class="target-click">디지털 시계</div>
           </div>
 
-          <div><h3>Design</h3></div>
-          <div class="targets-wrapper">
+          <!-- <div><h3>Design</h3></div> -->
+          <div id="tab-5" class="targets-wrapper tab-content">
             <div id="Modal-d1" class="target-click">svg</div>
             <div id="Modal-d2" class="target-click">텍스트 hover 이펙트</div>
             <div id="Modal-d3" class="target-click">Text Spinners</div>
