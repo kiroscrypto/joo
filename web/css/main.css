@@ -161,7 +161,7 @@ main .ch {font-family: 'Noto Sans TC';}
 }
 
 .accordion ul li div.sliderLink .goal {
-  font-size: 26px;
+  font-size: 18px;
   margin-top: 20px;
 	color: rgb(206, 140, 134);
 	font-style: italic;
@@ -855,31 +855,34 @@ footer p {text-align: center; line-height: 1.3; font-weight: 200;}
 /* 모바일 */
 @media screen and (max-width:767px) {
 /* common */
-	section h2 {margin-bottom: 26px; center;font-size: 30px;}
+	section h2 {margin-bottom: 26px; text-align: center;font-size: 30px;}
 
 	header #gnb {display: none;}
  /* main */
 	/*About Me*/
-/* accordion 시작 */
-.accordion { height: auto; }
-
-.accordion ul li,
-.accordion ul li:hover,
-.accordion ul:hover li,
-.accordion ul:hover li:hover {
-	position: relative;
-	display: table;
-	table-layout: fixed;
-	width: 100%;
-	-webkit-transition: none;
-	transition: none;
-}
-.accordion ul li div.sliderLink * {
-	opacity: 0;
-	-webkit-transform: translateX(0);
-	transform: translateX(0);
-}
-/* accordion 끝 */
+    /* accordion 시작 */
+    .accordion { 
+      height: auto;
+     }
+    .accordion ul li,
+    .accordion ul li:hover,
+    .accordion ul:hover li,
+    .accordion ul:hover li:hover {
+      /* position: relative; */
+      display: table;
+      table-layout:fixed;
+      width: 100%;
+      -webkit-transition: none;
+      transition: none;
+    }
+    .accordion ul li:first-child {border-top: 1px solid #000;}
+    .accordion ul li {border-bottom: 1px solid #000;}
+    .accordion ul li div.sliderLink * {
+      opacity: 0;
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+    }
+    /* accordion 끝 */
 
 #work1 {}
 
