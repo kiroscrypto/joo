@@ -516,7 +516,7 @@ i {font-size: 40px; color: #1A2227; position: absolute;left: 50%; transform: tra
   display: block;
 		padding: 10px 0;
   font-size:5vmin;
-  /* font-size: 15vmin; */
+  /* font-size: 5vmin; */
 }
 
 .button {
@@ -551,27 +551,6 @@ i {font-size: 40px; color: #1A2227; position: absolute;left: 50%; transform: tra
   box-shadow: 0px 0px 0 rgba(255, 255, 255, 0.5);
 }
 /* slider 끝 */
-
-
-
-
-
-
-/* #work1 .web_swiper {width: 100%;height: 500px;margin: auto;position: relative;}
-#work1 .web_slide {width: 100%;float: left;height: 500px;background: #fff;}
-#work1 .web_slide:after {content:""; display: block;clear: both;}
-#work1 .web_slide img {float: right;width: 60%;height: 100%;background-size: cover !important;}
-#work1 .web_slide img.web1 {background: url(../../img/web_1.png) center;}
-#work1 .web_slide img.web2 {background: url(../../img/web_2.png) center;}
-#work1 .web_slide .web_txt {float: left;width: 35%;padding: 30px;}
-#work1 .web_slide .web_txt .work_title {font-size: 26px;margin-bottom: 20px;}
-#work1 .web_slide .web_txt .work_summary {height: 300px;}
-#work1 .web_slide .web_txt .link a {display: inline-block;padding: 15px 20px;border: 1px solid #999;border-radius: 5px;color: #999;margin-right: 10px;}
-#work1 .web_prev {position: absolute;left: calc(50% - 670px);top: 40%;}
-#work1 .web_next {position: absolute;right: calc(50% - 690px);top: 40%;}
-#work1 .web_scrollbar {width: 100%;height: 3px;margin: auto;background: #ededed;}
-#work1 .web_pagination {width: auto;position: absolute;left: auto;right: 20px;top: 20px;bottom: auto;z-index: 10;font-size: 14px;font-weight: 600;}
-#work1 .web_pagination span {display: inline-block;margin: 0 3px;vertical-align: middle;font-size: 24px;} */
 
 /*Graphic Work*/
 #work2 {background: #1A2227}
@@ -791,10 +770,6 @@ footer p {text-align: center; line-height: 1.3; font-weight: 200;}
 /* accordion 끝 */
 
 #work1 {}
-#work1 .slide .info {
-		top: 100px;
-		left: 10px;
-	}
 
 
 /* caption hover effects 시작 */
