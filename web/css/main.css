@@ -22,8 +22,6 @@ header #gnb li {float: left;margin-right: 40px;color: #FFF;font-size: 20px;font-
 header.bg_on {background: #FFF;padding: 20px 5%;border-bottom: 1px solid #999;transition: all 0.3s}
 header.bg_on h1 {width: 120px;height: 38px;background: url(../../img/logo.png) no-repeat;transition: all 0.3s}
 header.bg_on #gnb li {color: #000;font-size: 18px;line-height: 25px;transition: all 0.3s}
-main .ch {font-family: 'Noto Sans TC';}
-
 
 /*Home*/
 #home {height: 100vh;padding-top: 0;background: url(../../img/bg.jpg) center;background-size: cover;}
@@ -590,7 +588,6 @@ https://www.youtube.com/watch?v=qSpBnZa3Bek */
 	background: linear-gradient(110deg, #1A2227 50%, #A93C32 50%); 
 }
 #study h2 {color: #fff;}
-#study h3 {color: #CDC7AE; text-align: center;}
  /* Tab 시작 */
  /* .wrapper {
   max-width: 800px;
@@ -611,6 +608,7 @@ https://www.youtube.com/watch?v=qSpBnZa3Bek */
   display: flex;
   justify-content: center;
 }
+#study .tabs span {color: #CDC7AE; text-align: center;}
 
 .tab-link {
   margin: 0 1%;
@@ -687,8 +685,6 @@ https://www.youtube.com/watch?v=qSpBnZa3Bek */
  /* Tab 끝 */
  
  /* Target elements 시작 */
-#study {}
-
 .targets-wrapper {
   text-align: center;
   padding-top: 50px;
@@ -886,6 +882,7 @@ footer p {text-align: center; line-height: 1.3; font-weight: 200;}
 
 #work1 {}
 
+#study .tabs {flex-direction: column;}
 
 /* caption hover effects 시작 */
 .captionImgList li {
