@@ -24,7 +24,7 @@ header.bg_on h1 {width: 120px;height: 38px;background: url(../../img/logo.png) n
 header.bg_on #gnb li {color: #000;font-size: 18px;line-height: 25px;transition: all 0.3s}
 
 /*Home*/
-#home {height: 100vh;padding-top: 0;background: url(../../img/bg.jpg) center;background-size: cover;}
+#home {height: 100vh; padding-top:0; background: url(../../img/bg.jpg) center;background-size: cover;}
 #home .home_bg {height:100%;position: relative;background: rgba(0,0,0,0.5);color: #FFF;text-align: center;}
 #home .home_txt {position: absolute;left: 50%;top: 50%;transform: translate(-50%, -80%)}
 #home .home_txt h2 {color:#fff; font-size: 50px;font-weight: 600;margin-bottom: 20px;}
@@ -202,31 +202,34 @@ background-position: 80% 100%;
 }
 /* accordion 끝 */
 
+#about {}
 #about .wrapper {display: none;}
 
-#skill {background:#1A2227}
+#skill {background:#1A2227;}
 #skill h2 {color: #fff;}
+
 	/* caption hover effects 시작 */
-.captionImgList { 
-	width: 100%;
+.captionImgList {
+	width: 100%; overflow: hidden;
 }
 .captionImgList li {
   float: left;
+  display: block;
+  position: relative;
+  height: 250px;
   width: calc(33.33333% - 10px);
   margin-right: 15px;
-		margin-bottom: 45px;
+	margin-bottom: 45px;
   overflow: hidden;
-		cursor: pointer;
-		background: rgba(255,255,255,0.9);
+	cursor: pointer;
+	background: rgba(255,255,255,0.3);
 }
 .captionImgList li:last-child {
   float: left;
   width: 100%;
-  /* margin-right: 15px;
-  margin-bottom: 45px; */
   overflow: hidden;
-		cursor: pointer;
-		background: rgba(255,255,255,0.9);
+	cursor: pointer;
+	background: rgba(255,255,255,0.3);
 }
 .captionImgList li .material-icons.md-48 {
   font-size: 48px;
@@ -234,16 +237,6 @@ background-position: 80% 100%;
 .captionImgList li:nth-child(3n) {
   margin-right: 0;
 }
-.captionImgList li {
-  display: block;
-  position: relative;
-  height: 250px;
-}
-/* .captionImgList li a {
-  display: block;
-  position: relative;
-  height: 250px;
-} */
 .imgBox {
   display: table-cell;
   width: 100%;
@@ -304,11 +297,12 @@ i {font-size: 40px; color: #1A2227; position: absolute;left: 50%; transform: tra
   color: #ebebeb;
   font-size: 14px;
 }
-
 /* caption hover effects 끝 */
 
 /*Web Work*/
-#work1 {background: #ededed; position: relative;}
+#work1 {background: #ededed; 
+  position: relative;
+}
 #work1 h2 {color: #000;}
 
 /* slider 시작 */
@@ -570,7 +564,7 @@ https://www.youtube.com/watch?v=qSpBnZa3Bek */
 #work2 {background: #1A2227}
 #work2 h2 {color: #fff;}
 #work2 .tabs {text-align: center;margin-bottom: 40px;}
-#work2 .tabs li {display: inline-block;margin: 0 20px;cursor: pointer;user-select: none;position: relative;font-weight: 500;}
+#work2 .tabs li {display: inline-block;margin: 0 20px;color: #fff; cursor: pointer;user-select: none;position: relative;font-weight: 500;}
 #work2 .tabs li.on {color: green}
 #work2 .tabs li.on:after {content:"";display: block;height: 3px;background: green;position: absolute;left: 0;right: 0;bottom: -7px;}
 #work2 .work_thumb {}
